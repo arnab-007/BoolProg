@@ -1,0 +1,17 @@
+Now I want to you to implement a prune mutation function, which takes tree object clf and the node_id to be pruned as input and outputs new tree with updated datasets at leaf and updated node_ids and also updates features_used with features used in new pruned tree:
+Here is the high level approach:
+If the sibling of the node to be pruned is leaf: then combine datasets at both leaves and make the parent as leaf and store the dataset.
+If the sibling of the node to be pruned is internal node: then make the sibling as root and apply predict on the new tree on dataset stored at pruned leaf.
+
+In both the cases the node will be pruned (removed) so node_ids will be updated, features used in the tree will also be updated and 
+the new tree will be returned. Implement it as a separate function so that current code is not much affected.
+
+
+An interesting problem:
+1. The MuteTree might get stuck in a situation where again an again first prunes a (any) child node 
+and then splits the parent (when it becomes a leaf). (We have a image for that)
+
+2. What moves should be dropped? Moves that have either distgain < 0 or validgain < 0, or sum of distgain + validgain < 0?
+
+3. We now perform weighted sampling.
+4. We are now using Scikit-learn implementation of the initial tree, also tree2dnf module extracts a dnf formula.

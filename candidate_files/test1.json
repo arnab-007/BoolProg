@@ -1,0 +1,15 @@
+{
+  "Program_variables": {
+    "Bools": ["a", "b"]
+  },
+  "Candidate": {
+    "Expression": "(a || !b) && (!a || b)"
+  },
+  "Updates in each iteration": {
+    "a": 1,
+    "b": 1
+  },
+  "Number of iterations": {
+    "while": 0
+  }
+}

@@ -1,0 +1,1898 @@
+CBMC version 5.95.1 (cbmc-5.95.1) 64-bit arm64 macos
+Parsing ex4.c
+Converting
+Type-checking ex4
+Generating GOTO Program
+Adding CPROVER library (arm64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Unwinding loop main.0 iteration 1 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 2 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 3 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 4 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 5 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 6 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 7 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 8 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 9 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 10 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 11 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 12 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 13 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 14 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 15 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 16 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 17 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 18 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 19 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 20 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 21 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 22 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 23 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 24 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 25 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 26 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 27 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 28 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 29 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 30 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 31 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 32 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 33 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 34 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 35 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 36 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 37 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 38 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 39 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 40 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 41 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 42 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 43 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 44 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 45 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 46 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 47 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 48 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 49 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 50 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 51 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 52 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 53 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 54 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 55 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 56 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 57 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 58 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 59 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 60 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 61 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 62 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 63 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 64 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 65 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 66 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 67 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 68 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 69 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 70 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 71 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 72 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 73 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 74 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 75 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 76 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 77 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 78 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 79 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 80 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 81 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 82 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 83 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 84 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 85 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 86 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 87 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 88 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 89 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 90 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 91 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 92 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 93 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 94 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 95 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 96 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 97 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 98 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 99 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 100 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 101 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 102 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 103 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 104 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 105 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 106 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 107 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 108 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 109 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 110 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 111 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 112 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 113 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 114 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 115 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 116 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 117 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 118 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 119 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 120 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 121 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 122 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 123 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 124 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 125 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 126 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 127 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 128 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 129 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 130 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 131 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 132 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 133 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 134 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 135 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 136 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 137 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 138 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 139 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 140 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 141 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 142 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 143 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 144 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 145 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 146 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 147 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 148 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 149 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 150 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 151 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 152 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 153 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 154 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 155 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 156 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 157 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 158 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 159 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 160 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 161 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 162 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 163 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 164 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 165 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 166 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 167 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 168 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 169 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 170 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 171 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 172 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 173 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 174 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 175 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 176 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 177 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 178 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 179 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 180 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 181 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 182 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 183 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 184 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 185 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 186 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 187 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 188 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 189 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 190 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 191 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 192 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 193 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 194 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 195 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 196 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 197 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 198 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 199 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 200 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 201 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 202 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 203 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 204 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 205 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 206 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 207 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 208 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 209 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 210 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 211 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 212 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 213 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 214 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 215 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 216 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 217 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 218 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 219 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 220 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 221 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 222 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 223 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 224 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 225 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 226 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 227 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 228 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 229 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 230 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 231 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 232 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 233 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 234 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 235 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 236 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 237 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 238 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 239 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 240 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 241 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 242 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 243 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 244 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 245 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 246 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 247 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 248 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 249 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 250 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 251 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 252 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 253 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 254 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 255 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 256 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 257 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 258 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 259 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 260 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 261 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 262 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 263 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 264 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 265 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 266 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 267 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 268 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 269 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 270 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 271 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 272 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 273 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 274 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 275 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 276 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 277 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 278 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 279 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 280 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 281 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 282 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 283 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 284 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 285 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 286 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 287 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 288 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 289 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 290 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 291 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 292 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 293 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 294 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 295 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 296 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 297 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 298 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 299 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 300 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 301 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 302 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 303 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 304 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 305 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 306 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 307 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 308 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 309 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 310 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 311 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 312 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 313 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 314 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 315 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 316 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 317 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 318 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 319 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 320 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 321 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 322 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 323 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 324 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 325 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 326 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 327 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 328 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 329 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 330 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 331 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 332 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 333 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 334 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 335 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 336 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 337 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 338 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 339 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 340 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 341 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 342 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 343 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 344 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 345 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 346 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 347 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 348 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 349 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 350 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 351 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 352 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 353 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 354 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 355 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 356 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 357 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 358 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 359 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 360 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 361 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 362 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 363 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 364 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 365 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 366 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 367 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 368 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 369 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 370 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 371 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 372 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 373 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 374 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 375 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 376 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 377 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 378 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 379 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 380 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 381 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 382 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 383 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 384 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 385 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 386 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 387 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 388 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 389 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 390 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 391 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 392 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 393 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 394 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 395 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 396 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 397 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 398 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 399 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 400 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 401 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 402 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 403 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 404 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 405 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 406 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 407 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 408 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 409 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 410 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 411 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 412 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 413 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 414 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 415 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 416 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 417 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 418 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 419 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 420 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 421 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 422 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 423 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 424 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 425 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 426 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 427 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 428 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 429 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 430 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 431 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 432 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 433 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 434 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 435 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 436 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 437 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 438 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 439 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 440 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 441 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 442 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 443 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 444 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 445 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 446 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 447 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 448 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 449 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 450 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 451 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 452 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 453 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 454 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 455 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 456 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 457 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 458 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 459 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 460 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 461 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 462 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 463 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 464 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 465 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 466 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 467 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 468 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 469 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 470 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 471 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 472 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 473 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 474 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 475 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 476 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 477 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 478 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 479 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 480 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 481 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 482 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 483 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 484 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 485 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 486 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 487 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 488 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 489 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 490 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 491 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 492 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 493 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 494 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 495 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 496 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 497 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 498 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 499 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 500 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 501 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 502 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 503 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 504 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 505 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 506 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 507 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 508 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 509 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 510 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 511 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 512 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 513 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 514 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 515 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 516 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 517 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 518 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 519 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 520 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 521 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 522 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 523 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 524 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 525 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 526 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 527 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 528 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 529 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 530 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 531 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 532 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 533 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 534 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 535 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 536 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 537 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 538 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 539 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 540 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 541 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 542 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 543 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 544 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 545 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 546 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 547 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 548 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 549 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 550 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 551 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 552 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 553 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 554 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 555 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 556 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 557 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 558 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 559 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 560 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 561 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 562 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 563 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 564 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 565 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 566 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 567 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 568 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 569 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 570 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 571 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 572 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 573 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 574 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 575 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 576 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 577 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 578 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 579 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 580 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 581 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 582 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 583 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 584 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 585 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 586 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 587 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 588 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 589 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 590 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 591 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 592 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 593 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 594 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 595 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 596 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 597 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 598 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 599 file ex4.c line 22 function main thread 0
+Not unwinding loop main.0 iteration 600 file ex4.c line 22 function main thread 0
+Runtime Symex: 0.675061s
+size of program expression: 14425 steps
+simple slicing removed 5 assignments
+Generated 1202 VCC(s), 1202 remaining after simplification
+Runtime Postprocess Equation: 0.000855666s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.186298s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 1.791e-06s
+Solving with MiniSAT 2.2.1 with simplifier
+13806 variables, 936890 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 3.61424s
+Runtime decision procedure: 3.80096s
+Building error trace
+
+** Results:
+ex4.c function main
+[main.assertion.1] line 21 assertion F: FAILURE
+[main.assertion.2] line 24 assertion F: FAILURE
+[main.assertion.3] line 46 assertion F: FAILURE
+[main.assertion.4] line 48 assertion F: FAILURE
+
+Trace for main.assertion.1:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+Trace for main.assertion.2:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 24 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+Trace for main.assertion.3:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 24 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+State 28 file ex4.c function main line 28 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 31 file ex4.c function main line 40 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 32 file ex4.c function main line 44 thread 0
+----------------------------------------------------
+  G=FALSE (0)
+
+State 33 file ex4.c function main line 45 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 46 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+Trace for main.assertion.4:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 24 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+State 28 file ex4.c function main line 28 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 31 file ex4.c function main line 40 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 32 file ex4.c function main line 44 thread 0
+----------------------------------------------------
+  G=FALSE (0)
+
+State 33 file ex4.c function main line 45 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 46 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 48 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+** 4 of 4 failed (2 iterations)
+VERIFICATION FAILED
+CBMC version 5.95.1 (cbmc-5.95.1) 64-bit arm64 macos
+Parsing ex4.c
+Converting
+Type-checking ex4
+Generating GOTO Program
+Adding CPROVER library (arm64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 8 object bits, 56 offset bits (default)
+Starting Bounded Model Checking
+Unwinding loop main.0 iteration 1 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 2 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 3 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 4 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 5 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 6 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 7 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 8 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 9 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 10 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 11 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 12 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 13 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 14 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 15 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 16 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 17 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 18 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 19 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 20 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 21 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 22 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 23 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 24 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 25 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 26 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 27 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 28 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 29 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 30 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 31 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 32 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 33 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 34 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 35 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 36 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 37 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 38 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 39 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 40 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 41 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 42 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 43 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 44 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 45 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 46 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 47 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 48 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 49 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 50 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 51 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 52 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 53 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 54 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 55 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 56 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 57 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 58 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 59 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 60 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 61 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 62 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 63 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 64 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 65 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 66 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 67 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 68 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 69 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 70 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 71 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 72 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 73 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 74 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 75 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 76 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 77 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 78 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 79 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 80 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 81 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 82 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 83 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 84 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 85 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 86 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 87 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 88 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 89 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 90 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 91 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 92 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 93 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 94 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 95 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 96 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 97 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 98 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 99 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 100 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 101 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 102 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 103 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 104 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 105 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 106 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 107 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 108 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 109 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 110 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 111 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 112 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 113 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 114 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 115 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 116 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 117 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 118 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 119 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 120 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 121 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 122 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 123 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 124 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 125 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 126 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 127 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 128 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 129 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 130 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 131 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 132 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 133 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 134 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 135 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 136 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 137 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 138 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 139 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 140 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 141 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 142 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 143 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 144 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 145 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 146 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 147 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 148 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 149 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 150 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 151 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 152 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 153 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 154 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 155 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 156 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 157 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 158 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 159 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 160 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 161 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 162 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 163 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 164 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 165 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 166 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 167 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 168 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 169 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 170 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 171 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 172 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 173 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 174 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 175 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 176 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 177 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 178 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 179 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 180 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 181 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 182 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 183 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 184 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 185 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 186 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 187 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 188 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 189 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 190 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 191 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 192 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 193 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 194 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 195 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 196 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 197 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 198 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 199 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 200 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 201 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 202 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 203 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 204 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 205 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 206 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 207 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 208 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 209 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 210 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 211 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 212 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 213 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 214 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 215 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 216 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 217 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 218 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 219 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 220 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 221 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 222 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 223 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 224 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 225 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 226 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 227 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 228 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 229 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 230 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 231 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 232 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 233 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 234 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 235 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 236 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 237 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 238 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 239 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 240 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 241 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 242 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 243 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 244 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 245 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 246 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 247 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 248 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 249 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 250 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 251 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 252 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 253 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 254 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 255 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 256 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 257 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 258 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 259 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 260 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 261 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 262 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 263 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 264 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 265 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 266 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 267 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 268 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 269 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 270 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 271 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 272 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 273 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 274 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 275 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 276 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 277 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 278 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 279 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 280 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 281 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 282 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 283 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 284 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 285 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 286 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 287 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 288 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 289 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 290 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 291 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 292 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 293 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 294 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 295 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 296 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 297 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 298 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 299 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 300 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 301 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 302 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 303 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 304 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 305 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 306 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 307 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 308 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 309 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 310 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 311 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 312 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 313 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 314 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 315 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 316 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 317 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 318 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 319 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 320 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 321 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 322 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 323 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 324 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 325 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 326 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 327 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 328 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 329 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 330 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 331 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 332 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 333 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 334 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 335 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 336 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 337 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 338 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 339 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 340 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 341 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 342 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 343 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 344 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 345 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 346 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 347 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 348 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 349 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 350 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 351 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 352 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 353 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 354 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 355 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 356 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 357 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 358 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 359 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 360 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 361 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 362 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 363 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 364 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 365 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 366 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 367 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 368 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 369 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 370 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 371 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 372 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 373 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 374 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 375 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 376 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 377 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 378 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 379 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 380 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 381 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 382 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 383 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 384 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 385 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 386 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 387 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 388 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 389 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 390 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 391 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 392 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 393 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 394 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 395 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 396 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 397 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 398 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 399 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 400 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 401 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 402 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 403 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 404 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 405 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 406 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 407 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 408 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 409 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 410 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 411 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 412 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 413 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 414 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 415 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 416 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 417 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 418 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 419 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 420 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 421 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 422 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 423 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 424 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 425 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 426 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 427 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 428 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 429 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 430 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 431 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 432 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 433 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 434 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 435 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 436 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 437 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 438 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 439 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 440 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 441 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 442 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 443 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 444 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 445 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 446 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 447 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 448 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 449 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 450 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 451 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 452 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 453 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 454 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 455 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 456 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 457 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 458 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 459 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 460 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 461 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 462 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 463 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 464 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 465 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 466 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 467 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 468 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 469 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 470 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 471 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 472 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 473 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 474 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 475 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 476 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 477 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 478 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 479 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 480 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 481 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 482 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 483 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 484 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 485 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 486 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 487 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 488 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 489 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 490 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 491 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 492 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 493 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 494 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 495 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 496 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 497 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 498 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 499 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 500 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 501 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 502 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 503 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 504 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 505 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 506 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 507 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 508 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 509 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 510 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 511 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 512 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 513 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 514 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 515 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 516 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 517 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 518 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 519 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 520 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 521 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 522 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 523 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 524 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 525 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 526 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 527 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 528 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 529 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 530 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 531 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 532 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 533 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 534 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 535 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 536 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 537 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 538 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 539 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 540 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 541 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 542 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 543 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 544 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 545 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 546 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 547 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 548 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 549 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 550 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 551 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 552 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 553 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 554 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 555 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 556 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 557 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 558 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 559 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 560 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 561 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 562 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 563 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 564 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 565 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 566 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 567 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 568 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 569 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 570 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 571 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 572 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 573 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 574 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 575 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 576 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 577 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 578 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 579 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 580 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 581 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 582 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 583 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 584 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 585 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 586 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 587 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 588 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 589 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 590 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 591 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 592 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 593 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 594 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 595 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 596 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 597 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 598 file ex4.c line 22 function main thread 0
+Unwinding loop main.0 iteration 599 file ex4.c line 22 function main thread 0
+Not unwinding loop main.0 iteration 600 file ex4.c line 22 function main thread 0
+Runtime Symex: 0.701536s
+size of program expression: 14425 steps
+simple slicing removed 5 assignments
+Generated 1202 VCC(s), 1202 remaining after simplification
+Runtime Postprocess Equation: 0.000861667s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.192153s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 1.833e-06s
+Solving with MiniSAT 2.2.1 with simplifier
+13806 variables, 936890 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 3.70269s
+Runtime decision procedure: 3.89529s
+Building error trace
+
+** Results:
+ex4.c function main
+[main.assertion.1] line 21 assertion F: FAILURE
+[main.assertion.2] line 24 assertion F: FAILURE
+[main.assertion.3] line 46 assertion F: FAILURE
+[main.assertion.4] line 48 assertion F: FAILURE
+
+Trace for main.assertion.1:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+Trace for main.assertion.2:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 24 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+Trace for main.assertion.3:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 24 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+State 28 file ex4.c function main line 28 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 31 file ex4.c function main line 40 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 32 file ex4.c function main line 44 thread 0
+----------------------------------------------------
+  G=FALSE (0)
+
+State 33 file ex4.c function main line 45 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 46 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+Trace for main.assertion.4:
+
+State 11 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  a=TRUE (1)
+
+State 12 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  b=FALSE (0)
+
+State 13 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  c=FALSE (0)
+
+State 14 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 15 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 16 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+State 17 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  G=TRUE (1)
+
+State 18 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r1=TRUE (1)
+
+State 19 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r2=FALSE (0)
+
+State 20 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r3=FALSE (0)
+
+State 21 file ex4.c function main line 12 thread 0
+----------------------------------------------------
+  r4=FALSE (0)
+
+Assumption:
+  file ex4.c line 17 function main
+  G
+
+State 23 file ex4.c function main line 20 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 21 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 24 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+State 28 file ex4.c function main line 28 thread 0
+----------------------------------------------------
+  d=FALSE (0)
+
+State 31 file ex4.c function main line 40 thread 0
+----------------------------------------------------
+  e=FALSE (0)
+
+State 32 file ex4.c function main line 44 thread 0
+----------------------------------------------------
+  G=FALSE (0)
+
+State 33 file ex4.c function main line 45 thread 0
+----------------------------------------------------
+  F=FALSE (0)
+
+Violated property:
+  file ex4.c function main line 46 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+Violated property:
+  file ex4.c function main line 48 thread 0
+  assertion F
+  !((signed long int)(signed long int)!F != 0l)
+
+
+
+** 4 of 4 failed (2 iterations)
+VERIFICATION FAILED

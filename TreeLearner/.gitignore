@@ -1,0 +1,10 @@
+FMCAD/
+IJCAI/
+tftp/
+satabs/
+tftp.tar.gz
+*.synctex.gz
+*.log
+*.aux
+*__pycache__
+code/final_trees/
