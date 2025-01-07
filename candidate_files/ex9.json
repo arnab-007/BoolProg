@@ -1,26 +1,37 @@
 {
-  "Program_variables": {
-    "Bools": ["x1", "x2", "x3", "x4", "x5"]
-  },
-  "Random_variables": {
-    "Bools": ["r1", "r2", "r3", "r4"]
-  },
-  "Candidate": {
-    "Expression": "(x1 || x3 || !x2) && (x1 || x3 || !x4) && (x2 || x4 || !x3) && (x1 || !x2 || !x4) && (x2 || !x1 || !x3) && (x2 || !x1 || !x5) && (x3 || !x4 || !x5) && (x4 || !x3 || !x5)"
-  },
-  "Initial states": {
-    "Expression": "(x1 || !x2) && (!x1 || x2) && (x3 || !x4) && (!x3 || x4)"
-  },
-  "Updates in each iteration": {
-    "x1": 2,
-    "x2": 3,
-    "x3": 1,
-    "x4": 1,
-    "x5": 1
-  },
-  "Program specification": {
-    "iterations": 1,
-    "operations per line": 4,
-    "number of lines": 15
-  }
+    "Program_variables": {
+        "Bools": [
+            "x1",
+            "x2",
+            "x3",
+            "x4",
+            "x5"
+        ]
+    },
+    "Random_variables": {
+        "Bools": [
+            "r1",
+            "r2",
+            "r3",
+            "r4"
+        ]
+    },
+    "Candidate": {
+        "Expression": "(x1 || x2 || x3 || !x4) && (x1 || x2 || x4 || !x3) && (x3 || !x1 || !x2 || !x4) && (x4 || !x1 || !x2 || !x3)"
+    },
+    "Initial states": {
+        "Expression": "(x1 || !x2) && (!x1 || x2) && (x3 || !x4) && (!x3 || x4)"
+    },
+    "Updates in each iteration": {
+        "x1": 2,
+        "x2": 3,
+        "x3": 1,
+        "x4": 1,
+        "x5": 1
+    },
+    "Program specification": {
+        "iterations": 1,
+        "operations per line": 4,
+        "number of lines": 15
+    }
 }

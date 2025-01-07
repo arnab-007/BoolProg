@@ -50,54 +50,7 @@ def remove_duplicate_literals(clause):
             cleaned_clause.append(literal)
     return cleaned_clause
 
-<<<<<<< HEAD
-
-from sympy.logic.boolalg import Or, And, Not, to_cnf
-from sympy import symbols
-
-def parse_dnf_to_expr(dnf_formula):
-    """
-    Converts a list of DNF terms to a symbolic DNF expression.
-    """
-    terms = []
-    for term in dnf_formula:
-        literals = []
-        for literal in term:
-            if literal < 0:
-                literals.append(Not(symbols(f"x{abs(literal)}")))
-            else:
-                literals.append(symbols(f"x{literal}"))
-        terms.append(And(*literals))
-    return Or(*terms)
-
 def DNF_to_CNF(dnf_formula):
-    """
-    Converts a list of DNF terms to a CNF formula using symbolic manipulation.
-    """
-    # Convert DNF formula into a symbolic expression
-    dnf_expr = parse_dnf_to_expr(dnf_formula)
-
-    # Use the global to_cnf function to convert to CNF
-    cnf_expr = to_cnf(dnf_expr, simplify=True)
-
-    # Extract CNF clauses as a list of lists
-    cnf_clauses = []
-    for clause in cnf_expr.args if isinstance(cnf_expr, And) else [cnf_expr]:
-        cnf_clause = []
-        for literal in clause.args if isinstance(clause, Or) else [clause]:
-            if literal.func == Not:
-                cnf_clause.append(-int(str(literal.args[0])[1:]))  # Convert ~xN to -N
-            else:
-                cnf_clause.append(int(str(literal)[1:]))  # Convert xN to N
-        cnf_clauses.append(cnf_clause)
-
-    return cnf_clauses
-
-
-def DNF_to_CNF_old(dnf_formula):
-=======
-def DNF_to_CNF(dnf_formula):
->>>>>>> d24bd43a4e465d7cbddd210d89b87469967e9ddf
     cnf_formula = []
 
     # If DNF formula is empty, return empty CNF formula
@@ -175,40 +128,25 @@ for progname in prognames:
     config = get_config(progname)
     prog_variables = config["Program_variables"]["Bools"]
     cand = config["Candidate"]["Expression"]
-<<<<<<< HEAD
-    iterations = config['Program specification']["iterations"]
+    
+    iterations = config["Program specification"]["iterations"]
+    
     cnf_list_init, cnf_str_init = generate_init_DIMACS_formula(cand,variable_mapping,{})
+    print(cnf_list_init)
     DIMACS_file = 'cnf-out'
-    cnf_prog_formula,num_variables = extract_formula_from_DIMACS(DIMACS_file)[0][:-(len(prog_variables))],extract_formula_from_DIMACS(DIMACS_file)[1]
-    #print(cnf_prog_formula)
+    cnf_prog_formula = extract_formula_from_DIMACS(DIMACS_file)[0][:-(len(prog_variables))]
     cnf_list_final, cnf_str_final = generate_final_DIMACS_formula(cand,variable_mapping,max_indices)
     neg_dnf_list_final = [[-elem for elem in L] for L in cnf_list_final]
-    #print(neg_dnf_list_final)
+    
     neg_cnf_list_final = DNF_to_CNF(neg_dnf_list_final)
     neg_cnf_list_final = [elem for elem in neg_cnf_list_final if elem]
+    
+    
     full_formula_list = cnf_list_init + cnf_prog_formula + neg_cnf_list_final
+    print(full_formula_list)
     # Convert to set to remove duplicates and then back to list
-    full_formula_list = list(set(tuple(clause) for clause in full_formula_list))
+    #full_formula_list = list(set(tuple(clause) for clause in full_formula_list))
     #print(full_formula_list)
-=======
-    updates = config["Updates in each iteration"]
-    iterations = config["Number of iterations"]
-    
-    cnf_list_init, cnf_str_init = generate_init_DIMACS_formula(cand,variable_mapping)
-    DIMACS_file = 'cnf-out'
-    cnf_prog_formula = extract_formula_from_DIMACS(DIMACS_file)[:-(len(prog_variables))]
-    cnf_list_final, cnf_str_final = generate_final_DIMACS_formula(cand,variable_mapping,updates)
-    neg_dnf_list_final = [[-elem for elem in L] for L in cnf_list_final]
-    
-    neg_cnf_list_final = DNF_to_CNF(neg_dnf_list_final)
-    neg_cnf_list_final = [elem for elem in neg_cnf_list_final if elem]
-    
-
-    full_formula_list = cnf_list_init + cnf_prog_formula + neg_cnf_list_final
-
-    # Convert to set to remove duplicates and then back to list
-    full_formula_list = list(set(tuple(clause) for clause in full_formula_list))
->>>>>>> d24bd43a4e465d7cbddd210d89b87469967e9ddf
     full_formula_dimacs = generate_DIMACS_formula(full_formula_list)
     file_path = "invariant_formula.cnf"
 
@@ -218,11 +156,6 @@ for progname in prognames:
 
     print("Full DIMACS formula has been written to", file_path)
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d24bd43a4e465d7cbddd210d89b87469967e9ddf
     
 
 

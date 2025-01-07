@@ -9,8 +9,9 @@ def extract_formula_from_DIMACS(file_path):
                 for _ in range(num_clauses):
                     clause = [int(x) for x in next(file).split() if x != '0']
                     formula.append(clause)
-<<<<<<< HEAD
+
+
                 return [formula ,num_variables]
-=======
-                return formula
->>>>>>> d24bd43a4e465d7cbddd210d89b87469967e9ddf
+
+                
+

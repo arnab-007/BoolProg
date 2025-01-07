@@ -1,0 +1,68 @@
+digraph {
+	1 [label="node_id=1
+x2 > 0.5" shape=box]
+	1 -> 11 [label=False]
+	11 [label="node_id=11
+x1 > 0.5" shape=box]
+	11 -> 111 [label=False]
+	111 [label="node_id=111
+x4 > 0.5" shape=box]
+	111 -> 1111 [label=False]
+	1111 [label="node_id=1111
+x3 > 0" shape=box]
+	1111 -> 11111 [label=False]
+	11111 [label="node_id=11111
+Lable: 1
+#Samples: 2" shape=box]
+	1111 -> 11112 [label=True]
+	11112 [label="node_id=11112
+Lable: 0
+#Samples: 2" shape=box]
+	111 -> 1112 [label=True]
+	1112 [label="node_id=1112
+x3 > 0.5" shape=box]
+	1112 -> 11121 [label=False]
+	11121 [label="node_id=11121
+Lable: 0
+#Samples: 2" shape=box]
+	1112 -> 11122 [label=True]
+	11122 [label="node_id=11122
+Lable: 1
+#Samples: 2" shape=box]
+	11 -> 112 [label=True]
+	112 [label="node_id=112
+Lable: 1
+#Samples: 2" shape=box]
+	1 -> 12 [label=True]
+	12 [label="node_id=12
+x1 > 0.5" shape=box]
+	12 -> 121 [label=False]
+	121 [label="node_id=121
+Lable: 1
+#Samples: 1" shape=box]
+	12 -> 122 [label=True]
+	122 [label="node_id=122
+x3 > 0.5" shape=box]
+	122 -> 1221 [label=False]
+	1221 [label="node_id=1221
+x4 > 0.5" shape=box]
+	1221 -> 12211 [label=False]
+	12211 [label="node_id=12211
+Lable: 1
+#Samples: 2" shape=box]
+	1221 -> 12212 [label=True]
+	12212 [label="node_id=12212
+Lable: 0
+#Samples: 1" shape=box]
+	122 -> 1222 [label=True]
+	1222 [label="node_id=1222
+x4 > 0.5" shape=box]
+	1222 -> 12221 [label=False]
+	12221 [label="node_id=12221
+Lable: 0
+#Samples: 1" shape=box]
+	1222 -> 12222 [label=True]
+	12222 [label="node_id=12222
+Lable: 1
+#Samples: 2" shape=box]
+}

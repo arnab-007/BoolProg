@@ -21,6 +21,7 @@ import subprocess
 
 CURRENT_PATH = os.path.realpath("")
 PATH = os.path.dirname(CURRENT_PATH)
+#PATH = os.path.dirname(PARENT_PATH)
 assumed_shape = " "
 
 

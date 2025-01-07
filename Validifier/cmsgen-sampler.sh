@@ -4,7 +4,7 @@
 RANDOM_SEED=$RANDOM  # Alternatively, you can use: $(date +%s)
 
 # Call CMSGen with the random seed
-../cmsgen/build/cmsgen -s $RANDOM_SEED --samples=500 --samplefile=samples.out ../candidate-cnf
+/usr/local/bin/cmsgen -s $RANDOM_SEED --samples=500 --samplefile=samples.out ../candidate-cnf
 
 # Print the seed for reproducibility (optional)
 echo "Used random seed: $RANDOM_SEED"
