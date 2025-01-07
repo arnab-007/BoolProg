@@ -6,7 +6,7 @@ import json
 CURRENT_PATH = os.path.realpath("")
 DIRECTORY_PATH = os.path.dirname(CURRENT_PATH)
 PATH = os.path.dirname(DIRECTORY_PATH)
-print(PATH)
+#print(PATH)
 assumed_shape = " "
 with open(os.path.join(PATH, "program-list.txt"), "r") as f:
     prognames = f.read().strip().split("\n")
@@ -105,8 +105,8 @@ write_dimacs_to_file(dimacs_init, num_vars, len(dimacs_init), os.path.join(PATH,
 import subprocess
 
 # Path to your bash script
-script_path = os.path.join(PATH, "src/Validifier/cmsgen_sampler.sh") 
-
+script_path = os.path.join(PATH, "src/Validifier/cmsgen-sampler.sh") 
+#print("script_path",script_path)
 # Run the bash script
 result = subprocess.run(["bash", script_path],capture_output=True,text=True,check=True)  # Raise CalledProcessError if the subprocess fails
         

@@ -440,7 +440,7 @@ with open(os.path.join(PARENT_PATH, "src/DistEstimate/DistEstimate_results", f"e
 
 
 
-final_tree = clf
+intermediate_tree = clf
 while (distestimate_value != 0 or validifier_value != 0):
 
     print("DistEstimate value:",distestimate_value)
@@ -454,19 +454,19 @@ while (distestimate_value != 0 or validifier_value != 0):
     df_dist_next = prepare_data(next_phase_dist_data, number_of_vars, DistEstimate = True)
     df_valid_next = prepare_data(next_phase_valid_data, number_of_vars, DistEstimate = False)
     df_next = pd.concat([df_dist_next, df_valid_next], ignore_index=True)
-    final_tree.predict(df_next[list(df.columns[:-3])].values, expected_labels=df_next['label'].values, weights=df_next['weight'].values, member=df_next['member'].values)
+    intermediate_tree.predict(df_next[list(df.columns[:-3])].values, expected_labels=df_next['label'].values, weights=df_next['weight'].values, member=df_next['member'].values)
     #clf.print_leaf_datapoints()
-    print("Next Phase Bounds:", final_tree.get_error_bounds())
+    print("Next Phase Bounds:", intermediate_tree.get_error_bounds())
     #final_tree.save_tree(f'{PATH}/ex10_after_next_phase')
     #print("DNF after prediction:", clf.tree_to_dnf())
 
 
     for iteration in range(5):
-        final_tree_copy = copy.deepcopy(final_tree)
+        intermediate_tree_copy = copy.deepcopy(intermediate_tree)
         print(f'{iteration=}')
         random.seed(iteration + 10)
         print("------NEXT PHASE------")
-        final_tree, tree_sequence = MuteTree(final_tree_copy, df_next, 0, 0)
+        final_tree, tree_sequence = MuteTree(intermediate_tree_copy, df_next, 0, 0)
         final_tree.save_tree(output_file=f'{PATH}/final_trees/ex10_second_{iteration}')
         Next_phase_DNF = final_tree.tree_to_dnf()
         Next_phase_CNF = DNF_to_CNF(Next_phase_DNF)
@@ -548,6 +548,8 @@ while (distestimate_value != 0 or validifier_value != 0):
         distestimate_data = json.load(file)
         #second_dist_list = distestimate_data["output_dict"]["counterexamples"]
         distestimate_value = distestimate_data["output_dict"]["DistEstimate_value"]
+
+    intermediate_tree = final_tree
 
 
 
