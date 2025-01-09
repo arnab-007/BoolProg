@@ -804,7 +804,7 @@ for progname in prognames:
     total_dict = {"input_dict":input_dict,"parameters_dict":parameters_dict,"output_dict":output_dict}
     #print(len(unique_state_counter_examples))
     #print(len(sampled_output_states))
-    results_directory = os.path.join(CURRENT_PATH, 'Validifier_results')
+    results_directory = os.path.join(PARENT_PATH, 'Validifier/Validifier_results')
     if not os.path.exists(results_directory):
         os.makedirs(results_directory)
 

@@ -1,0 +1,80 @@
+Initial phase CNF: (x6 || !x8) && (x8 || !x6) && (x1 || x6 || !x3) && (x3 || x6 || !x1) && (x3 || x7 || !x1) && (x1 || x7 || !x3 || !x5) && (x4 || x7 || !x3 || !x5 || !x8)
+Initial phase TreeLearner time:  0.0796821117401123
+Initial Verifier time : 15.170594692230225
+Initial phase time : 15.252011060714722
+DistEstimate value: 0.28049999999999997
+Validifier value: 0.124
+iteration=0
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x8 || !x1) && (x1 || x4 || !x3 || !x6) && (x1 || x5 || !x3 || !x6) && (x3 || !x1 || !x5 || !x6) && (x3 || !x1 || !x6 || !x7)
+iteration=1
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x8 || !x1) && (x1 || x4 || !x3 || !x6) && (x1 || x5 || !x3 || !x6) && (x3 || !x1 || !x5 || !x6) && (x3 || !x1 || !x6 || !x7)
+iteration=2
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x8 || !x1) && (x1 || x4 || !x3 || !x6) && (x1 || x5 || !x3 || !x6) && (x3 || !x1 || !x5 || !x6) && (x3 || !x1 || !x6 || !x7)
+iteration=3
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x8 || !x1) && (x1 || x4 || !x3 || !x6) && (x1 || x5 || !x3 || !x6) && (x3 || !x1 || !x5 || !x6) && (x3 || !x1 || !x6 || !x7)
+iteration=4
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x8 || !x1) && (x1 || x4 || !x3 || !x6) && (x1 || x5 || !x3 || !x6) && (x3 || !x1 || !x5 || !x6) && (x3 || !x1 || !x6 || !x7)
+Next phase TreeLearner time : 3.629807949066162
+Next phase Verifier time:  14.639696836471558
+Next phase total time:  18.271493911743164
+DistEstimate value: 0.13716666666666666
+Validifier value: 0.378
+iteration=0
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x3 || x6 || !x2 || !x8) && (x3 || !x1 || !x5 || !x8) && (x6 || !x3 || !x7 || !x8) && (x1 || x2 || !x3 || !x5 || !x8) && (x1 || x4 || !x3 || !x5 || !x8) && (x3 || x4 || !x1 || !x2 || !x8) && (x3 || x4 || !x1 || !x7 || !x8) && (x3 || x7 || !x1 || !x4 || !x8) && (x1 || x5 || !x2 || !x3 || !x7 || !x8) && (x1 || x5 || x7 || !x3 || !x4 || !x6 || !x8)
+iteration=1
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x3 || x6 || !x2 || !x8) && (x3 || !x1 || !x5 || !x8) && (x6 || !x3 || !x7 || !x8) && (x1 || x2 || !x3 || !x5 || !x8) && (x1 || x4 || !x3 || !x5 || !x8) && (x3 || x4 || !x1 || !x2 || !x8) && (x3 || x4 || !x1 || !x7 || !x8) && (x3 || x7 || !x1 || !x4 || !x8) && (x1 || x5 || !x2 || !x3 || !x7 || !x8) && (x1 || x5 || x7 || !x3 || !x4 || !x6 || !x8)
+iteration=2
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x3 || x6 || !x2 || !x8) && (x3 || !x1 || !x5 || !x8) && (x6 || !x3 || !x7 || !x8) && (x1 || x2 || !x3 || !x5 || !x8) && (x1 || x4 || !x3 || !x5 || !x8) && (x3 || x4 || !x1 || !x2 || !x8) && (x3 || x4 || !x1 || !x7 || !x8) && (x3 || x7 || !x1 || !x4 || !x8) && (x1 || x5 || !x2 || !x3 || !x7 || !x8) && (x1 || x5 || x7 || !x3 || !x4 || !x6 || !x8)
+iteration=3
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x3 || x6 || !x2 || !x8) && (x3 || !x1 || !x5 || !x8) && (x6 || !x3 || !x7 || !x8) && (x1 || x2 || !x3 || !x5 || !x8) && (x1 || x4 || !x3 || !x5 || !x8) && (x3 || x4 || !x1 || !x2 || !x8) && (x3 || x4 || !x1 || !x7 || !x8) && (x3 || x7 || !x1 || !x4 || !x8) && (x1 || x5 || !x2 || !x3 || !x7 || !x8) && (x1 || x5 || x7 || !x3 || !x4 || !x6 || !x8)
+iteration=4
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x3 || x6 || !x2 || !x8) && (x3 || !x1 || !x5 || !x8) && (x6 || !x3 || !x7 || !x8) && (x1 || x2 || !x3 || !x5 || !x8) && (x1 || x4 || !x3 || !x5 || !x8) && (x3 || x4 || !x1 || !x2 || !x8) && (x3 || x4 || !x1 || !x7 || !x8) && (x3 || x7 || !x1 || !x4 || !x8) && (x1 || x5 || !x2 || !x3 || !x7 || !x8) && (x1 || x5 || x7 || !x3 || !x4 || !x6 || !x8)
+Next phase TreeLearner time : 185.14482498168945
+Next phase Verifier time:  17.999468088150024
+Next phase total time:  203.14878511428833
+DistEstimate value: 0.019499999999999962
+Validifier value: 0.482
+iteration=0
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x6 || !x1) && (x3 || !x1 || !x5) && (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x3 || x4 || !x1 || !x7) && (x3 || x6 || !x2 || !x8) && (x3 || x7 || !x1 || !x4) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x6 || !x1) && (x3 || !x1 || !x5) && (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x3 || x4 || !x1 || !x7) && (x3 || x6 || !x2 || !x8) && (x3 || x7 || !x1 || !x4) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=2
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x6 || !x1) && (x3 || !x1 || !x5) && (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x3 || x4 || !x1 || !x7) && (x3 || x6 || !x2 || !x8) && (x3 || x7 || !x1 || !x4) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=3
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x6 || !x1) && (x3 || !x1 || !x5) && (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x3 || x4 || !x1 || !x7) && (x3 || x6 || !x2 || !x8) && (x3 || x7 || !x1 || !x4) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=4
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x6 || !x1) && (x3 || !x1 || !x5) && (x6 || !x1 || !x8) && (x6 || !x5 || !x8) && (x3 || x6 || x7 || !x8) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x3 || x4 || !x1 || !x7) && (x3 || x6 || !x2 || !x8) && (x3 || x7 || !x1 || !x4) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+Next phase TreeLearner time : 77.08109712600708
+Next phase Verifier time:  17.16004991531372
+Next phase total time:  94.24497485160828
+Total time taken:  330.9177551269531

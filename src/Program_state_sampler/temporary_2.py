@@ -11,7 +11,7 @@ parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, parent_dir)
 
 CURRENT_PATH = os.path.realpath("")
-PATH = os.path.dirname(CURRENT_PATH)
+PATH = os.path.dirname(parent_dir)
 assumed_shape = " "
 
 
@@ -62,10 +62,11 @@ def balance_lists(list1, list2):
 
 
 def sample_to_decimal(sample):
-    # Create a 12-bit binary string with all bits initially set to '0'
+    
     #binary_string = ['0'] * 17
     #binary_string = ['0'] * 8
-    binary_string = ['0'] * 5
+    #binary_string = ['0'] * 5
+    binary_string = ['0'] * 12
     for value in sample:
         if value == 0:
             continue  # Skip the terminating zero

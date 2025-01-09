@@ -157,7 +157,7 @@ def process_and_remove_duplicates(L):
 
 
 # Example usage:
-input_file = "../input-cnf"  # Path to the input CNF file
-output_file = "../input-negated-cnf"  # Path to the output CNF file for negation
+input_file = "../../input-cnf"  # Path to the input CNF file
+output_file = "../../input-negated-cnf"  # Path to the output CNF file for negation
 negate_cnf_to_dimacs(input_file, output_file)
 

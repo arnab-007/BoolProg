@@ -171,7 +171,7 @@ def MuteTree(tree, df, distUser, validUser):
     tree_sequence = {}
     #while((distCurr > distUser or validCurr > validUser) and time.time() - start < 100):
     while(time.time() - start < 200):
-        print('{error_bounds=}', tree.get_error_bounds())
+        #print('{error_bounds=}', tree.get_error_bounds())
         leaf_ids = tree.get_all_leaf_nodes()
         #topk = round(len(clf.get_all_leaf_nodes())/2) + 1 
         moves = []
@@ -190,7 +190,7 @@ def MuteTree(tree, df, distUser, validUser):
         #print(moves)
         _, tree, error_bounds, leaf_id, mutation = random.choices(moves, weights=[move[0] for move in moves])[0]
         #print("leaf_id and mutation", leaf_id, mutation)
-        tree.save_tree(f'{PATH}/intermediate/ex10_{leaf_id}_{mutation}')
+        #tree.save_tree(f'{PATH}/intermediate/ex10_{leaf_id}_{mutation}')
         tree_sequence[tree] = error_bounds
         distCurr, validCurr = error_bounds['dist_error'], error_bounds['valid_error']
         if distCurr <= distUser  and validCurr <= validUser:
@@ -205,7 +205,7 @@ def MuteTree(tree, df, distUser, validUser):
         return tree, {}
     # best_tree = sorted(tree_sequence.items(), key=lambda x: round(np.sqrt(x[1]['dist_error'] + x[1]['valid_error'])))[0][0]
     best_tree = sorted(tree_sequence.items(), key=lambda x: round(np.sqrt(x[1]['dist_error'] + x[1]['valid_error']), 2))[0][0]
-    print("Best Tree Error Bounds:", best_tree.get_error_bounds())
+    #print("Best Tree Error Bounds:", best_tree.get_error_bounds())
     return best_tree, tree_sequence
 
 
@@ -264,10 +264,10 @@ def DNF_to_CNF(dnf_formula):
     """
     # Step 1: Parse the DNF formula into a sympy expression
     dnf_expr = parse_dnf(dnf_formula)
-    print(dnf_expr)
+    #print(dnf_expr)
     # Step 2: Convert to CNF and simplify
     cnf_expr = simplify_logic(dnf_expr, form='cnf')
-    print(cnf_expr)
+    #print(cnf_expr)
     # Step 3: Convert sympy expression back to the desired string format
     cnf_str = str(cnf_expr)
 
@@ -324,20 +324,22 @@ Validifier_trigger_path = os.path.join(PARENT_PATH, "src/Validifier/", "Validifi
 #DistEstimate_trigger_path = os.path.join(PATH, "DistEstimate_trigger.sh")
 #Validifier_trigger_path = os.path.join(PATH, "Validifier_trigger.sh")
 
-
+start = time.time()
 for progname in prognames:
     initial_states = get_init_state(progname)
     cand_info = get_config_cand(progname)
 
+
+initial_phase_start = time.time()
 initial_dist_data = initial_states["output_dict"]["Sampled positive initial states"]
 initial_valid_data = initial_states["output_dict"]["Sampled negative initial states"]
 print("Initial dist data:",initial_dist_data)
 print("Initial valid data:",initial_valid_data)
 #print(length := len(initial_dist_data), len(initial_valid_data), len(second_phase_dist_data), len(second_phase_valid_data))
 #number_of_vars = 8
-number_of_vars = 5
+#number_of_vars = 5
 #number_of_vars = 17
-#number_of_vars = 12
+number_of_vars = 12
 df_dist = prepare_data(initial_dist_data, number_of_vars, DistEstimate = True)
 df_valid = prepare_data(initial_valid_data, number_of_vars, DistEstimate = False)
 df = pd.concat([df_dist, df_valid], ignore_index=True)
@@ -347,12 +349,14 @@ clf = CustomDecisionTree(max_depth=number_of_vars)
 clf.fit_initial(X, y, feature_names=df.columns[:-3])
 #clf.save_tree(f'{PATH}/ex10_before_prediction')
 predictions = clf.predict(df_dist[list(df.columns[:-3])].values, expected_labels=df_dist['label'].values, weights=df_dist['weight'].values, member=df_dist['member'].values)
-print("Initial Bounds(after prediction):", clf.get_error_bounds())
+#print("Initial Bounds(after prediction):", clf.get_error_bounds())
 #clf.save_tree(f'{PATH}/ex10_after_prediction')
 Init_tree_DNF = clf.tree_to_dnf()
-print("Initial phase DNF:", Init_tree_DNF)
+#print("Initial phase DNF:", Init_tree_DNF)
 Init_tree_CNF = DNF_to_CNF(Init_tree_DNF)
 print("Initial phase CNF:", Init_tree_CNF)
+
+print("Initial phase TreeLearner time: ", time.time() - initial_phase_start)
 #print(cand_info)
 with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "r") as file:
     data = json.load(file)
@@ -362,9 +366,10 @@ with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "w")
 
 
 
-print("Running Validifier script located at:", Validifier_trigger_path)
-print("Running DistEstimate script located at:", DistEstimate_trigger_path)
+#print("Running Validifier script located at:", Validifier_trigger_path)
+#print("Running DistEstimate script located at:", DistEstimate_trigger_path)
 
+initial_verifier_time = time.time()
 try:
     # Run the first subprocess
     result_validifier = subprocess.run(
@@ -399,6 +404,10 @@ except FileNotFoundError as e:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
 
+
+
+print("Initial Verifier time :", time.time() - initial_verifier_time)
+
 valid_results_directory = os.path.join(PARENT_PATH, "src/Validifier/Validifier_results")
 if not os.path.exists(valid_results_directory):
     os.makedirs(valid_results_directory)
@@ -408,9 +417,9 @@ while f"exp_{progname}_{file_number}.json" in existing_valid_files:
     file_number += 1
 if file_number > 1:
     file_number = file_number - 1
-print(file_number)
+#print(file_number)
 validifier_path = os.path.join(PARENT_PATH, "src/Validifier/Validifier_results", f"exp_{progname}_{file_number}.json")
-print(f"Checking for validifier results at: {validifier_path}")
+#print(f"Checking for validifier results at: {validifier_path}")
 if not os.path.exists(validifier_path):
     print(f"Warning: No validifier results found at {validifier_path}")
     validifier_value = 0
@@ -420,6 +429,9 @@ else:
         validifier_data = json.load(file)
         validifier_value = validifier_data["output_dict"]["Validifier_value"]
     
+
+
+
 
 dist_results_directory = os.path.join(PARENT_PATH, "src/DistEstimate/DistEstimate_results")
 if not os.path.exists(dist_results_directory):
@@ -431,7 +443,7 @@ while f"exp_{progname}_{file_number}.json" in existing_dist_files:
 
 if file_number > 1:
     file_number = file_number - 1
-print(file_number)
+#print(file_number)
 
 with open(os.path.join(PARENT_PATH, "src/DistEstimate/DistEstimate_results", f"exp_{progname}_{file_number}.json"), "r") as file:
     distestimate_data = json.load(file)
@@ -440,23 +452,27 @@ with open(os.path.join(PARENT_PATH, "src/DistEstimate/DistEstimate_results", f"e
 
 
 
+print("Initial phase time :", time.time() - initial_phase_start)
 intermediate_tree = clf
 while (distestimate_value != 0 or validifier_value != 0):
 
     print("DistEstimate value:",distestimate_value)
     print("Validifier value:",validifier_value)
+
+
+    next_phase_start = time.time()
     next_dist_list = distestimate_data["output_dict"]["counterexamples"]
     next_valid_list = validifier_data["output_dict"]["counterexamples"]
     next_phase_dist_data = [(int(element),1,1) for element in next_dist_list.keys()]
     next_phase_valid_data = [(int(element),1,0) for element in next_valid_list.keys()]
-    print("next_phase_valid_data",next_phase_valid_data)
-    print("next_phase_dist_data",next_phase_dist_data)
+    #print("next_phase_valid_data",next_phase_valid_data)
+    #print("next_phase_dist_data",next_phase_dist_data)
     df_dist_next = prepare_data(next_phase_dist_data, number_of_vars, DistEstimate = True)
     df_valid_next = prepare_data(next_phase_valid_data, number_of_vars, DistEstimate = False)
     df_next = pd.concat([df_dist_next, df_valid_next], ignore_index=True)
     intermediate_tree.predict(df_next[list(df.columns[:-3])].values, expected_labels=df_next['label'].values, weights=df_next['weight'].values, member=df_next['member'].values)
     #clf.print_leaf_datapoints()
-    print("Next Phase Bounds:", intermediate_tree.get_error_bounds())
+    #print("Next Phase Bounds:", intermediate_tree.get_error_bounds())
     #final_tree.save_tree(f'{PATH}/ex10_after_next_phase')
     #print("DNF after prediction:", clf.tree_to_dnf())
 
@@ -467,12 +483,13 @@ while (distestimate_value != 0 or validifier_value != 0):
         random.seed(iteration + 10)
         print("------NEXT PHASE------")
         final_tree, tree_sequence = MuteTree(intermediate_tree_copy, df_next, 0, 0)
-        final_tree.save_tree(output_file=f'{PATH}/final_trees/ex10_second_{iteration}')
+        #final_tree.save_tree(output_file=f'{PATH}/final_trees/ex10_second_{iteration}')
         Next_phase_DNF = final_tree.tree_to_dnf()
+        print("Next_phase_DNF:", Next_phase_DNF)
         Next_phase_CNF = DNF_to_CNF(Next_phase_DNF)
         print("Next phase CNF:", Next_phase_CNF)
 
-
+    print("Next phase TreeLearner time :", time.time() - next_phase_start)
     with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "r") as file:
         data = json.load(file)
         data["Candidate"]["Expression"] = Next_phase_CNF
@@ -480,7 +497,7 @@ while (distestimate_value != 0 or validifier_value != 0):
         json.dump(data, file, indent=4)
 
 
-
+    next_phase_verifier_time = time.time()
     try:
         # Run the first subprocess
         result_validifier = subprocess.run(
@@ -491,7 +508,7 @@ while (distestimate_value != 0 or validifier_value != 0):
         )
         #print("Validifier Output:", result_validifier.stdout)
         
-
+    
     # Run the second subprocess
         result_distestimate = subprocess.run(
             ["bash", DistEstimate_trigger_path],
@@ -501,7 +518,7 @@ while (distestimate_value != 0 or validifier_value != 0):
         )
         #print("DistEstimate Output:", result_distestimate.stdout)
     
-
+    
     except subprocess.CalledProcessError as e:
         print(f"Subprocess failed with return code {e.returncode}")
         print(f"Command: {e.cmd}")
@@ -515,6 +532,8 @@ while (distestimate_value != 0 or validifier_value != 0):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+    print("Next phase Verifier time: ", time.time() - next_phase_verifier_time)
+
 
     valid_results_directory = os.path.join(PARENT_PATH, "src/Validifier/Validifier_results")
     if not os.path.exists(valid_results_directory):
@@ -527,7 +546,7 @@ while (distestimate_value != 0 or validifier_value != 0):
 
 
     validifier_path = os.path.join(PARENT_PATH, "src/Validifier/Validifier_results", f"exp_{progname}_{file_number}.json")
-    print(f"Checking for validifier results at: {validifier_path}")
+    #print(f"Checking for validifier results at: {validifier_path}")
     if not os.path.exists(validifier_path):
         print(f"Warning: No validifier results found at {validifier_path}")
     else:
@@ -552,8 +571,11 @@ while (distestimate_value != 0 or validifier_value != 0):
     intermediate_tree = final_tree
 
 
+    print("Next phase total time: ", time.time() - next_phase_start)
 
 
+
+print("Total time taken: ",time.time() - start)
 
 
 
