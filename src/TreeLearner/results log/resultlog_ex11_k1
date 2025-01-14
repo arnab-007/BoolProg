@@ -77,4 +77,6 @@ Next phase CNF: (x8 || !x6) && (x1 || x8 || !x3) && (x3 || x6 || !x1) && (x3 || 
 Next phase TreeLearner time : 77.08109712600708
 Next phase Verifier time:  17.16004991531372
 Next phase total time:  94.24497485160828
+DistEstimate value: 0.0
+Validifier value: 0.0
 Total time taken:  330.9177551269531

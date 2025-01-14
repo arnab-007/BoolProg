@@ -64,9 +64,9 @@ def balance_lists(list1, list2):
 def sample_to_decimal(sample):
     
     #binary_string = ['0'] * 17
-    #binary_string = ['0'] * 8
+    binary_string = ['0'] * 8
     #binary_string = ['0'] * 5
-    binary_string = ['0'] * 12
+    #binary_string = ['0'] * 12
     for value in sample:
         if value == 0:
             continue  # Skip the terminating zero

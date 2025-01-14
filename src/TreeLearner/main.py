@@ -336,10 +336,10 @@ initial_valid_data = initial_states["output_dict"]["Sampled negative initial sta
 print("Initial dist data:",initial_dist_data)
 print("Initial valid data:",initial_valid_data)
 #print(length := len(initial_dist_data), len(initial_valid_data), len(second_phase_dist_data), len(second_phase_valid_data))
-#number_of_vars = 8
+number_of_vars = 8
 #number_of_vars = 5
 #number_of_vars = 17
-number_of_vars = 12
+#number_of_vars = 12
 df_dist = prepare_data(initial_dist_data, number_of_vars, DistEstimate = True)
 df_valid = prepare_data(initial_valid_data, number_of_vars, DistEstimate = False)
 df = pd.concat([df_dist, df_valid], ignore_index=True)

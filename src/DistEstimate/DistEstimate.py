@@ -195,21 +195,21 @@ for p in range(len(L)):
             r2 = random.randint(0, 1)
             r3 = random.randint(0, 1)
             r4 = random.randint(0, 1)
-            r5 = random.randint(0, 1)
-            r6 = random.randint(0, 1)
+            #r5 = random.randint(0, 1)
+            #r6 = random.randint(0, 1)
             #r7 = random.randint(0, 1)
             #output = ex9(L1[0], L1[1], L1[2], L1[3], L1[4], r1, r2, r3, r4)
-            #output = ex11(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], r1, r2, r3, r4)
+            output = ex11(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], r1, r2, r3, r4)
             #output = ex10(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], L1[8], L1[9], L1[10], L1[11], L1[12], L1[13], L1[14], L1[15], L1[16], r1, r2, r3, r4, r5, r6, r7)
-            output = ex12(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], L1[8], L1[9], L1[10], L1[11], r1, r2, r3, r4, r5, r6)
+            #output = ex12(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], L1[8], L1[9], L1[10], L1[11], r1, r2, r3, r4, r5, r6)
             #print("Output: ",output)
 
             
             #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(5)]
-            #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(8)]
+            L1 = [int(bit) for bit in bin(int(output))[2:].zfill(8)]
 
             #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(17)]
-            L1 = [int(bit) for bit in bin(int(output))[2:].zfill(12)]
+            #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(12)]
         
         
             results.append(output)  #Keeping track of all possible states reachable in at most k iterations 
@@ -247,7 +247,7 @@ for element in element_counts:
     if (ind_distance == 0):
         counterexamples.append(element)
 
-distance = 1 - (rev_distance/(len(L)*10))
+distance = 1 - (rev_distance/(len(L)*10*k))
 print("DistEstimate outputs: ",distance)
 
 

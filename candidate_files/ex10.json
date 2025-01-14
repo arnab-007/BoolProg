@@ -6,7 +6,7 @@
     "Bools": ["r1", "r2", "r3", "r4", "r5", "r6", "r7"]
   },
   "Candidate": {
-    "Expression": "(x10 || x7 || !x9) && (x10 || x9 || !x7) && (x9 || !x17 || !x7)"
+    "Expression": "(x7 || !x9) && (!x7 || x9)"
   },
   "Initial states": {
     "Expression": "(x7 || !x9) && (!x7 || x9) && (x12 || !x16) && (!x12 || x16)"

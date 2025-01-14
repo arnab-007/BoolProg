@@ -207,8 +207,8 @@ def prepare_data(data, number_of_vars, DistEstimate = True):
     return df
 
 
-initial_dist_data = [(0, 1, 1), (1, 1, 1), (6, 1, 1), (7, 1, 1), (24, 1, 1), (25, 1, 1), (30, 1, 1), (31, 1, 1)]
-initial_valid_data = [(5, 1, 0), (17, 1, 0), (19, 1, 0), (20, 1, 0), (21, 1, 0), (23, 1, 0), (26, 1, 0), (28, 1, 0)]
+initial_dist_data = [(24, 1, 1), (42, 1, 1), (56, 1, 1), (96, 1, 1), (114, 1, 1), (294, 1, 1), (301, 1, 1), (310, 1, 1), (333, 1, 1), (375, 1, 1), (520, 1, 1), (530, 1, 1), (538, 1, 1), (545, 1, 1), (562, 1, 1), (571, 1, 1), (579, 1, 1), (593, 1, 1), (610, 1, 1), (618, 1, 1), (772, 1, 1), (782, 1, 1), (797, 1, 1), (804, 1, 1), (813, 1, 1), (822, 1, 1), (855, 1, 1), (1035, 1, 1), (1041, 1, 1), (1042, 1, 1), (1049, 1, 1), (1090, 1, 1), (1091, 1, 1), (1096, 1, 1), (1099, 1, 1), (1318, 1, 1), (1332, 1, 1), (1375, 1, 1), (1380, 1, 1), (1382, 1, 1), (1404, 1, 1), (1406, 1, 1), (1407, 1, 1), (1600, 1, 1), (1626, 1, 1), (1806, 1, 1), (1838, 1, 1), (1861, 1, 1), (1877, 1, 1), (1879, 1, 1), (1885, 1, 1), (1887, 1, 1), (2195, 1, 1), (2264, 1, 1), (2493, 1, 1), (2511, 1, 1), (2533, 1, 1), (2689, 1, 1), (2707, 1, 1), (2746, 1, 1), (2752, 1, 1), (2753, 1, 1), (2802, 1, 1), (2959, 1, 1), (2966, 1, 1), (2980, 1, 1), (2996, 1, 1), (3007, 1, 1), (3021, 1, 1), (3023, 1, 1), (3029, 1, 1), (3044, 1, 1), (3045, 1, 1), (3054, 1, 1), (3063, 1, 1), (3200, 1, 1), (3216, 1, 1), (3227, 1, 1), (3264, 1, 1), (3290, 1, 1), (3461, 1, 1), (3468, 1, 1), (3477, 1, 1), (3517, 1, 1), (3524, 1, 1), (3534, 1, 1), (3550, 1, 1), (3567, 1, 1), (3583, 1, 1), (3714, 1, 1), (3817, 1, 1), (3819, 1, 1), (3998, 1, 1), (4021, 1, 1), (4022, 1, 1), (4053, 1, 1), (4055, 1, 1), (4063, 1, 1)]
+initial_valid_data = [(6, 1, 0), (45, 1, 0), (147, 1, 0), (149, 1, 0), (314, 1, 0), (389, 1, 0), (404, 1, 0), (407, 1, 0), (445, 1, 0), (573, 1, 0), (591, 1, 0), (596, 1, 0), (604, 1, 0), (628, 1, 0), (636, 1, 0), (697, 1, 0), (701, 1, 0), (730, 1, 0), (747, 1, 0), (768, 1, 0), (808, 1, 0), (841, 1, 0), (865, 1, 0), (874, 1, 0), (898, 1, 0), (901, 1, 0), (956, 1, 0), (960, 1, 0), (980, 1, 0), (997, 1, 0), (1009, 1, 0), (1023, 1, 0), (1188, 1, 0), (1210, 1, 0), (1255, 1, 0), (1306, 1, 0), (1339, 1, 0), (1344, 1, 0), (1410, 1, 0), (1441, 1, 0), (1458, 1, 0), (1500, 1, 0), (1559, 1, 0), (1644, 1, 0), (1713, 1, 0), (1716, 1, 0), (1748, 1, 0), (1772, 1, 0), (1800, 1, 0), (1811, 1, 0), (1842, 1, 0), (1851, 1, 0), (1906, 1, 0), (1928, 1, 0), (2039, 1, 0), (2084, 1, 0), (2138, 1, 0), (2152, 1, 0), (2175, 1, 0), (2212, 1, 0), (2375, 1, 0), (2391, 1, 0), (2637, 1, 0), (2658, 1, 0), (2676, 1, 0), (2845, 1, 0), (2910, 1, 0), (2927, 1, 0), (2929, 1, 0), (2953, 1, 0), (2955, 1, 0), (3048, 1, 0), (3101, 1, 0), (3180, 1, 0), (3206, 1, 0), (3222, 1, 0), (3271, 1, 0), (3364, 1, 0), (3405, 1, 0), (3423, 1, 0), (3438, 1, 0), (3452, 1, 0), (3616, 1, 0), (3648, 1, 0), (3675, 1, 0), (3676, 1, 0), (3708, 1, 0), (3740, 1, 0), (3751, 1, 0), (3773, 1, 0), (3791, 1, 0), (3806, 1, 0), (3848, 1, 0), (3863, 1, 0), (3898, 1, 0), (3927, 1, 0), (3953, 1, 0), (4033, 1, 0)]
 second_phase_dist_data = [(16, 1, 1), (28, 1, 1), (26, 1, 1), (18, 1, 1)]
 second_phase_valid_data = [(2, 1, 0), (3, 1, 0), (4, 1, 0), (8, 1, 0), (9, 1, 0), (10, 1, 0), (11, 1, 0), (14, 1, 0), (15, 1, 0), (27, 1, 0), (29, 1, 0)]
 third_phase_dist_data = [(12,1,1)]
@@ -216,24 +216,27 @@ third_phase_valid_data = [(17,1,0),(20,1,0),(22,1,0),(23,1,0)]
 fourth_phase_dist_data = []
 fourth_phase_valid_data = [(13, 1, 0)]
 
-number_of_vars = 5
+number_of_vars = 12
 df_dist = prepare_data(initial_dist_data, number_of_vars, DistEstimate = True)
 df_valid = prepare_data(initial_valid_data, number_of_vars, DistEstimate = False)
 df = pd.concat([df_dist, df_valid], ignore_index=True)
 X = df[list(df.columns[:-3])].values
 y = df['label'].values
-clf = CustomDecisionTree(max_depth=8)
+clf = CustomDecisionTree(max_depth= number_of_vars)
 clf.fit_initial(X, y, feature_names=df.columns[:-3])
 #print("initial dnf", clf.tree_to_dnf())
 clf.save_tree(f'{PATH}/ex11_before_prediction')
 predictions = clf.predict(df_dist[list(df.columns[:-3])].values, expected_labels=df_dist['label'].values, weights=df_dist['weight'].values, member=df_dist['member'].values)
-#print("Initial Bounds(after prediction):", clf.get_error_bounds())
+print("Initial Bounds(before prediction):", clf.get_error_bounds())
 clf.save_tree(f'{PATH}/ex11_after_prediction')
+print("DNF:", clf.tree_to_dnf())
+print("CNF:", DNF_to_CNF(clf.tree_to_dnf()))
 #print("dnf", clf.tree_to_dnf())
 df_dist_second = prepare_data(second_phase_dist_data, number_of_vars, DistEstimate = True)
 df_valid_second = prepare_data(second_phase_valid_data, number_of_vars, DistEstimate = False)
 df_second = pd.concat([df_dist_second, df_valid_second], ignore_index=True)
 clf.predict(df_second[list(df.columns[:-3])].values, expected_labels=df_second['label'].values, weights=df_second['weight'].values, member=df_second['member'].values)
+print("Initial Bounds(after prediction):", clf.get_error_bounds())
 
 # df_dist_third = prepare_data(third_phase_dist_data, number_of_vars, DistEstimate = True)
 # df_valid_third = prepare_data(third_phase_valid_data, number_of_vars, DistEstimate = False)
@@ -243,6 +246,8 @@ clf.predict(df_second[list(df.columns[:-3])].values, expected_labels=df_second['
 # df_valid_fourth = prepare_data(fourth_phase_valid_data, number_of_vars, DistEstimate = False)
 # df_fourth = pd.concat([df_dist_fourth, df_valid_fourth], ignore_index=True)
 
+'''
+
 for iteration in range(4,5):
     clf_copy = copy.deepcopy(clf)
     print(f'{iteration=}')
@@ -251,6 +256,8 @@ for iteration in range(4,5):
     final_tree, tree_sequence = MuteTree(clf_copy, df_second, 0, 0)
     final_tree.save_tree(output_file=f'{PATH}/final_trees/ex5_second_{iteration}')
     print("CNF:", DNF_to_CNF(final_tree.tree_to_dnf()))
+
+'''
 
 
 

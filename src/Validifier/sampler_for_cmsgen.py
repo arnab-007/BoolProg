@@ -77,9 +77,9 @@ cnf_formula_cand = cand_list
 cnf_formula_init = init_list
 # Variable mapping (manual assignment of variables to integers)
 #variable_mapping = {'x1': 1, 'x2': 2, 'x3': 3, 'x4': 4, 'x5': 5}
-#variable_mapping = {'x1': 1, 'x2': 2, 'x3': 3, 'x4': 4, 'x5': 5, 'x6': 6, 'x7': 7, 'x8': 8}
+variable_mapping = {'x1': 1, 'x2': 2, 'x3': 3, 'x4': 4, 'x5': 5, 'x6': 6, 'x7': 7, 'x8': 8}
 #variable_mapping = {'x1': 1, 'x2': 2, 'x3': 3, 'x4': 4, 'x5': 5, 'x6': 6, 'x7': 7, 'x8': 8, 'x9': 9, 'x10': 10, 'x11': 11, 'x12': 12, 'x13': 13, 'x14': 14, 'x15': 15, 'x16': 16, 'x17': 17}
-variable_mapping = {'x1': 1, 'x2': 2, 'x3': 3, 'x4': 4, 'x5': 5, 'x6': 6, 'x7': 7, 'x8': 8, 'x9': 9, 'x10': 10, 'x11': 11, 'x12': 12}
+#variable_mapping = {'x1': 1, 'x2': 2, 'x3': 3, 'x4': 4, 'x5': 5, 'x6': 6, 'x7': 7, 'x8': 8, 'x9': 9, 'x10': 10, 'x11': 11, 'x12': 12}
 # Convert to DIMACS format
 dimacs_cand = cnf_to_dimacs(cnf_formula_cand, variable_mapping)
 dimacs_init = cnf_to_dimacs(cnf_formula_init, variable_mapping)
@@ -114,9 +114,9 @@ result = subprocess.run(["bash", script_path],capture_output=True,text=True,chec
 #print(result)
 # Define the variable mapping
 #variable_mapping = {1: 'x1', 2: 'x2', 3: 'x3', 4: 'x4', 5: 'x5'}
-#variable_mapping = {1: 'x1', 2: 'x2', 3: 'x3', 4: 'x4', 5: 'x5', 6: 'x6', 7: 'x7', 8: 'x8'}
+variable_mapping = {1: 'x1', 2: 'x2', 3: 'x3', 4: 'x4', 5: 'x5', 6: 'x6', 7: 'x7', 8: 'x8'}
 #variable_mapping = {1: 'x1', 2: 'x2', 3: 'x3', 4: 'x4', 5: 'x5', 6: 'x6', 7: 'x7', 8: 'x8', 9: 'x9', 10: 'x10', 11: 'x11', 12: 'x12', 13: 'x13', 14: 'x14', 15: 'x15', 16: 'x16', 17: 'x17'}
-variable_mapping = {1: 'x1', 2: 'x2', 3: 'x3', 4: 'x4', 5: 'x5', 6: 'x6', 7: 'x7', 8: 'x8', 9: 'x9', 10: 'x10', 11: 'x11', 12: 'x12'}
+#variable_mapping = {1: 'x1', 2: 'x2', 3: 'x3', 4: 'x4', 5: 'x5', 6: 'x6', 7: 'x7', 8: 'x8', 9: 'x9', 10: 'x10', 11: 'x11', 12: 'x12'}
 
 
 
