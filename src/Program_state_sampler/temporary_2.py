@@ -64,9 +64,12 @@ def balance_lists(list1, list2):
 def sample_to_decimal(sample):
     
     #binary_string = ['0'] * 17
-    binary_string = ['0'] * 8
+    #binary_string = ['0'] * 8
     #binary_string = ['0'] * 5
+    #binary_string = ['0'] * 9
+    binary_string = ['0'] * 10
     #binary_string = ['0'] * 12
+    #print(sample)
     for value in sample:
         if value == 0:
             continue  # Skip the terminating zero
@@ -103,8 +106,8 @@ decimals_2 = sorted(list(set(decimals_2)))
 decimals_S, decimals_not_S = balance_lists(decimals_1, decimals_2)
 decimals_S = sorted(list(set(decimals_S)))
 decimals_not_S = sorted(list(set(decimals_not_S)))
-print(len(decimals_S))
-print(len(decimals_not_S))
+#print(len(decimals_S))
+#print(len(decimals_not_S))
 print("Initial states in S",decimals_S)
 print("Initial states not in S",decimals_not_S)
 

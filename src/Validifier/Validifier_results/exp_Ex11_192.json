@@ -1,0 +1,35 @@
+{
+    "input_dict": {
+        "progname": "Ex11",
+        "candidate": "(!x4) && (x4 || !x6) && (x4 || x6 || !x7) && (x4 || x6 || x7 || x8)",
+        "init_states": "(x1 || !x3) && (!x1 || x3) && (x6 || !x8) && (!x6 || x8)",
+        "iterations": 5
+    },
+    "parameters_dict": {
+        "epsilon": 0.05,
+        "delta": 0.1,
+        "t": 500
+    },
+    "output_dict": {
+        "Sampled output states": [
+            65,
+            193,
+            161,
+            33,
+            97,
+            225,
+            129,
+            1,
+            233,
+            105,
+            41,
+            73,
+            201,
+            137,
+            169,
+            9
+        ],
+        "Validifier_value": 0.0,
+        "counterexamples": {}
+    }
+}

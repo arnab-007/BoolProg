@@ -122,6 +122,11 @@ def ex6(x1, x2, x3, x4 ,x5):
     output = result.stdout.strip()
     return output
 
+def ex7(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, r1, r2, r3, r4, r5):
+    result = subprocess.run(['./a.out', str(x1), str(x2), str(x3), str(x4), str(x5), str(x6), str(x7), str(x8), str(x9), str(x10), str(r1), str(r2), str(r3), str(r4), str(r5)], 
+                            capture_output=True, text=True)
+    output = result.stdout.strip()
+    return output
 
 def ex8(x1, x2, r1, r2):
     result = subprocess.run(['./a.out', str(x1), str(x2), str(r1), str(r2)], 
@@ -195,36 +200,33 @@ for p in range(len(L)):
             r2 = random.randint(0, 1)
             r3 = random.randint(0, 1)
             r4 = random.randint(0, 1)
-            #r5 = random.randint(0, 1)
+            r5 = random.randint(0, 1)
             #r6 = random.randint(0, 1)
             #r7 = random.randint(0, 1)
+            output = ex7(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], L1[8], L1[9], r1, r2, r3, r4, r5)
             #output = ex9(L1[0], L1[1], L1[2], L1[3], L1[4], r1, r2, r3, r4)
-            output = ex11(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], r1, r2, r3, r4)
+            #output = ex11(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], r1, r2, r3, r4)
             #output = ex10(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], L1[8], L1[9], L1[10], L1[11], L1[12], L1[13], L1[14], L1[15], L1[16], r1, r2, r3, r4, r5, r6, r7)
             #output = ex12(L1[0], L1[1], L1[2], L1[3], L1[4], L1[5], L1[6], L1[7], L1[8], L1[9], L1[10], L1[11], r1, r2, r3, r4, r5, r6)
             #print("Output: ",output)
 
             
-            #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(5)]
-            L1 = [int(bit) for bit in bin(int(output))[2:].zfill(8)]
-
-            #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(17)]
-            #L1 = [int(bit) for bit in bin(int(output))[2:].zfill(12)]
-        
+            L1 = [int(bit) for bit in bin(int(output))[2:].zfill(num_variables)]
+            
         
             results.append(output)  #Keeping track of all possible states reachable in at most k iterations 
         
-        element_counts = {}
+element_counts = {}
         
         
-        L1 = L[p]
-    for element in results:
+        #L1 = L[p]
+for element in results:
             
-        if element in element_counts:
-            element_counts[element] += 1
+    if element in element_counts:
+        element_counts[element] += 1
             
-        else:
-            element_counts[element] = 1
+    else:
+        element_counts[element] = 1
     
     #print(L[p])
     #print(element_counts)

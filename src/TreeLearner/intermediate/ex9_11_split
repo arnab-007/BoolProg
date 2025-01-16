@@ -1,0 +1,19 @@
+digraph {
+	1 [label="node_id=1
+x5 > 0" shape=box]
+	1 -> 11 [label=False]
+	11 [label="node_id=11
+x1 > 0" shape=box]
+	11 -> 111 [label=False]
+	111 [label="node_id=111
+Lable: 1
+#Samples: 5" shape=box]
+	11 -> 112 [label=True]
+	112 [label="node_id=112
+Lable: 1
+#Samples: 5" shape=box]
+	1 -> 12 [label=True]
+	12 [label="node_id=12
+Lable: 1
+#Samples: 8" shape=box]
+}

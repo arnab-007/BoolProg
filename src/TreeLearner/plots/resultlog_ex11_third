@@ -1,0 +1,197 @@
+Initial dist data: [[0, 1, 1], [5, 1, 1], [7, 1, 1], [8, 1, 1], [13, 1, 1], [15, 1, 1], [16, 1, 1], [21, 1, 1], [23, 1, 1], [26, 1, 1], [31, 1, 1], [66, 1, 1], [69, 1, 1], [72, 1, 1], [74, 1, 1], [77, 1, 1], [79, 1, 1], [80, 1, 1], [82, 1, 1], [85, 1, 1], [87, 1, 1], [88, 1, 1], [95, 1, 1], [160, 1, 1], [162, 1, 1], [165, 1, 1], [167, 1, 1], [168, 1, 1], [170, 1, 1], [173, 1, 1], [175, 1, 1], [176, 1, 1], [178, 1, 1], [181, 1, 1], [183, 1, 1], [184, 1, 1], [186, 1, 1], [189, 1, 1], [191, 1, 1], [224, 1, 1], [226, 1, 1], [229, 1, 1], [231, 1, 1], [232, 1, 1], [234, 1, 1], [237, 1, 1], [239, 1, 1], [240, 1, 1], [242, 1, 1], [247, 1, 1], [248, 1, 1], [250, 1, 1], [253, 1, 1]]
+Initial valid data: [[11, 1, 0], [19, 1, 0], [20, 1, 0], [53, 1, 0], [55, 1, 0], [62, 1, 0], [63, 1, 0], [75, 1, 0], [78, 1, 0], [83, 1, 0], [84, 1, 0], [86, 1, 0], [97, 1, 0], [100, 1, 0], [101, 1, 0], [102, 1, 0], [103, 1, 0], [107, 1, 0], [115, 1, 0], [124, 1, 0], [125, 1, 0], [129, 1, 0], [132, 1, 0], [134, 1, 0], [135, 1, 0], [138, 1, 0], [139, 1, 0], [142, 1, 0], [144, 1, 0], [145, 1, 0], [149, 1, 0], [154, 1, 0], [156, 1, 0], [157, 1, 0], [177, 1, 0], [179, 1, 0], [188, 1, 0], [192, 1, 0], [194, 1, 0], [196, 1, 0], [197, 1, 0], [204, 1, 0], [205, 1, 0], [211, 1, 0], [216, 1, 0], [222, 1, 0], [228, 1, 0], [230, 1, 0], [233, 1, 0], [243, 1, 0], [246, 1, 0], [249, 1, 0], [254, 1, 0]]
+Initial phase CNF: (x1 || !x3) && (x3 || !x1) && (x8 || !x4 || !x6) && (x1 || x6 || !x7 || !x8) && (x1 || x8 || !x6 || !x7) && (x6 || !x2 || !x3 || !x8) && (x6 || !x3 || !x4 || !x8) && (x8 || !x2 || !x3 || !x6)
+Initial phase TreeLearner time:  0.07719087600708008
+Initial Verifier time : 28.21932315826416
+Initial phase time : 28.298682928085327
+DistEstimate value: 0.5161666666666667
+Validifier value: 0.176
+iteration=0
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 || x3 && !x1 || x3 && x1 && !x2 && !x8 && !x6 || x3 && x1 && !x2 && x8 && x6 || x3 && x1 && x2 && !x6 && !x8 || x3 && x1 && x2 && x6 && x8
+Next phase CNF: (x1 || x3 || x8 || !x6) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x8 || !x1 || !x3 || !x6)
+iteration=1
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 || x3 && !x1 || x3 && x1 && !x2 && !x8 && !x6 || x3 && x1 && !x2 && x8 && x6 || x3 && x1 && x2 && !x6 && !x8 || x3 && x1 && x2 && x6 && x8
+Next phase CNF: (x1 || x3 || x8 || !x6) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x8 || !x1 || !x3 || !x6)
+iteration=2
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 || x3 && !x1 || x3 && x1 && !x2 && !x8 && !x6 || x3 && x1 && !x2 && x8 && x6 || x3 && x1 && x2 && !x6 && !x8 || x3 && x1 && x2 && x6 && x8
+Next phase CNF: (x1 || x3 || x8 || !x6) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x8 || !x1 || !x3 || !x6)
+iteration=3
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 || x3 && !x1 || x3 && x1 && !x2 && !x8 && !x6 || x3 && x1 && !x2 && x8 && x6 || x3 && x1 && x2 && !x6 && !x8 || x3 && x1 && x2 && x6 && x8
+Next phase CNF: (x1 || x3 || x8 || !x6) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x8 || !x1 || !x3 || !x6)
+iteration=4
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 || x3 && !x1 || x3 && x1 && !x2 && !x8 && !x6 || x3 && x1 && !x2 && x8 && x6 || x3 && x1 && x2 && !x6 && !x8 || x3 && x1 && x2 && x6 && x8
+Next phase CNF: (x1 || x3 || x8 || !x6) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x8 || !x1 || !x3 || !x6)
+Next phase TreeLearner time : 3.1606221199035645
+Next phase Verifier time:  29.710513830184937
+Next phase total time:  32.873319149017334
+DistEstimate value: 0.0
+Validifier value: 0.348
+iteration=0
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x8 || !x3 || !x6) && (x1 || x7 || x8 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x8 || !x3 || !x6) && (x1 || x7 || x8 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=2
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x8 || !x3 || !x6) && (x1 || x7 || x8 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=3
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x8 || !x3 || !x6) && (x1 || x7 || x8 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=4
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x2 && !x8 && !x6 || x3 && x1 && !x2 && x8 && x6 || x3 && x1 && x2
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x7 || x8 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x2 || x8 || !x3 || !x6) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x6 || !x2 || !x7 || !x8) && (x2 || x6 || !x1 || !x3 || !x8) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+Next phase TreeLearner time : 1402.8455588817596
+Next phase Verifier time:  29.332484245300293
+Next phase total time:  1432.1827788352966
+DistEstimate value: 0.05233333333333334
+Validifier value: 0.136
+iteration=0
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=2
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=3
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=4
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+Next phase TreeLearner time : 1221.4625079631805
+Next phase Verifier time:  29.83040428161621
+Next phase total time:  1251.2990226745605
+DistEstimate value: 0.04358333333333331
+Validifier value: 0.0
+iteration=0
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=2
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=3
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=4
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+Next phase TreeLearner time : 3472.1517481803894
+Next phase Verifier time:  39.98263502120972
+Next phase total time:  3512.1413412094116
+DistEstimate value: 0.04800000000000004
+Validifier value: 0.0
+iteration=0
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=2
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=3
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=4
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+Next phase TreeLearner time : 1332.2752151489258
+Next phase Verifier time:  29.628549098968506
+Next phase total time:  1361.908231973648
+DistEstimate value: 0.05174999999999996
+Validifier value: 0.0
+iteration=0
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=2
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=3
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=4
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+Next phase TreeLearner time : 1001.7182841300964
+Next phase Verifier time:  29.333004236221313
+Next phase total time:  1031.0575201511383
+DistEstimate value: 0.04441666666666666
+Validifier value: 0.0
+iteration=0
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: !x3 && !x1 && !x7 && !x6 && !x8 || !x3 && !x1 && !x7 && x6 && x8 || !x3 && !x1 && x7 && !x6 && !x8 || !x3 && !x1 && x7 && !x6 && x8 && !x2 || !x3 && !x1 && x7 && x6 && x8 || !x3 && x1 && !x2 || !x3 && x1 && x2 && x4 || x3 && !x1 && x8 && !x5 && !x7 && !x4 || x3 && !x1 && x8 && !x5 && !x7 && x4 && !x6 || x3 && !x1 && x8 && !x5 && x7 && !x2 && x6 || x3 && !x1 && x8 && x5 && x4 && x6 && !x2 && x7 || x3 && !x1 && x8 && x5 && x4 && x6 && x2 || x3 && x1 && !x8 && !x6 || x3 && x1 && x8 && x6
+Next phase CNF: (x1 || x8 || !x3) && (x1 || x8 || !x6) && (x8 || !x3 || !x6) && (x1 || x4 || !x3 || !x5) && (x1 || x6 || !x3 || !x5) && (x1 || x6 || !x3 || !x7) && (x3 || x4 || !x1 || !x2) && (x1 || x3 || x6 || x7 || !x8) && (x6 || !x1 || !x3 || !x8) && (x1 || x3 || x6 || !x2 || !x8) && (x1 || x5 || !x2 || !x3 || !x7) && (x1 || x2 || x7 || !x3 || !x4 || !x6) && (x1 || x5 || x7 || !x3 || !x4 || !x6)
+iteration=1
+------NEXT PHASE------
+Timeout occurred. Returning the best tree so far.
+Next_phase_DNF: 

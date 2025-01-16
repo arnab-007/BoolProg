@@ -1,0 +1,34 @@
+{
+    "input_dict": {
+        "progname": "Ex9",
+        "candidate": "(!x1) && (!x2)",
+        "init_states": "(!x1) && (!x2) && (!x5) && (x3 || !x4) && (!x3 || x4)",
+        "iterations": 1
+    },
+    "parameters_dict": {
+        "epsilon": 0.05,
+        "delta": 0.1,
+        "t": 500
+    },
+    "output_dict": {
+        "Sampled output states": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "Validifier_value": 0.724,
+        "counterexamples": {
+            "1": 0.125,
+            "2": 0.125,
+            "3": 0.125,
+            "4": 0.125,
+            "5": 0.125,
+            "7": 0.125
+        }
+    }
+}

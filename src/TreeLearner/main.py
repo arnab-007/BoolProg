@@ -43,6 +43,12 @@ def get_config_cand(progname):
 with open(os.path.join(PARENT_PATH, "program-list.txt"), "r") as f:
     prognames = f.read().strip().split("\n")
 
+for progname in prognames:
+    config = get_config_cand(progname)
+    prog_variables = config["Program_variables"]["Bools"]
+    cand = config["Candidate"]["Expression"]
+    iterations = config["Program specification"]["iterations"]
+
 
 
 
@@ -225,7 +231,6 @@ def prepare_data(data, number_of_vars, DistEstimate = True):
     return df
 
 
-
 from sympy.logic.boolalg import Or, And, Not
 from sympy import symbols, simplify_logic
 import re
@@ -254,7 +259,7 @@ def parse_dnf(dnf_formula):
     expr = eval(dnf_formula, eval_globals)
     return expr
 
-def DNF_to_CNF(dnf_formula):
+def DNF_to_CNF_old(dnf_formula):
     """
     Convert a DNF formula string to a minimized CNF formula string.
     Args:
@@ -264,10 +269,10 @@ def DNF_to_CNF(dnf_formula):
     """
     # Step 1: Parse the DNF formula into a sympy expression
     dnf_expr = parse_dnf(dnf_formula)
-    #print(dnf_expr)
+    print(dnf_expr)
     # Step 2: Convert to CNF and simplify
     cnf_expr = simplify_logic(dnf_expr, form='cnf')
-    #print(cnf_expr)
+    print(cnf_expr)
     # Step 3: Convert sympy expression back to the desired string format
     cnf_str = str(cnf_expr)
 
@@ -278,6 +283,59 @@ def DNF_to_CNF(dnf_formula):
     cnf_str = cnf_str.replace('&&', ') && (').replace('||', ' || ').strip()
     cnf_str = cnf_str.replace('&','&&').replace('|','||')
     return cnf_str
+
+
+def DNF_to_CNF(dnf_string):
+    def parse_clause(clause):
+        """Convert a conjunction clause into a set of literals."""
+        return set(literal.strip() for literal in clause.split("&&"))
+
+    def parse_dnf(dnf):
+        """Parse a DNF string into a list of conjunction clauses."""
+        clauses = dnf.split("||")
+        return [parse_clause(clause.strip(" ")) for clause in clauses]
+
+    def find_common_literals(clauses):
+        """Find literals common across all clauses."""
+        common = set.intersection(*clauses)
+        return common
+
+    def remove_common_literals(clauses, common):
+        """Remove common literals from all clauses."""
+        return [clause - common for clause in clauses]
+
+    def simplify_clauses(clauses):
+        """Simplify by removing redundant or subsumed clauses."""
+        simplified = []
+        for clause in clauses:
+            if not any(clause < other for other in clauses):
+                simplified.append(clause)
+        return simplified
+
+    def cnf_to_string(cnf_clauses):
+        """Convert CNF clauses to string representation."""
+        return " && ".join(
+            "(" + " || ".join(literal for literal in clause) + ")" for clause in cnf_clauses
+        )
+
+    # Parse the DNF into clauses
+    dnf_clauses = parse_dnf(dnf_string)
+
+    # Find common literals across all clauses
+    common_literals = find_common_literals(dnf_clauses)
+
+    # Remove common literals from clauses
+    reduced_clauses = remove_common_literals(dnf_clauses, common_literals)
+
+    # Simplify the remaining clauses
+    simplified_clauses = simplify_clauses(reduced_clauses)
+
+    # Reconstruct the CNF: Add back the common literals to each simplified clause
+    cnf_clauses = [clause | common_literals for clause in simplified_clauses]
+
+    # Convert to CNF string format
+    return cnf_to_string(cnf_clauses)
+
 
 
 
@@ -336,7 +394,8 @@ initial_valid_data = initial_states["output_dict"]["Sampled negative initial sta
 print("Initial dist data:",initial_dist_data)
 print("Initial valid data:",initial_valid_data)
 #print(length := len(initial_dist_data), len(initial_valid_data), len(second_phase_dist_data), len(second_phase_valid_data))
-number_of_vars = 8
+#number_of_vars = 8
+number_of_vars = 10
 #number_of_vars = 5
 #number_of_vars = 17
 #number_of_vars = 12
@@ -347,13 +406,14 @@ X = df[list(df.columns[:-3])].values
 y = df['label'].values
 clf = CustomDecisionTree(max_depth=number_of_vars)
 clf.fit_initial(X, y, feature_names=df.columns[:-3])
-#clf.save_tree(f'{PATH}/ex10_before_prediction')
+clf.save_tree(f'{PATH}/ex9_before_prediction')
 predictions = clf.predict(df_dist[list(df.columns[:-3])].values, expected_labels=df_dist['label'].values, weights=df_dist['weight'].values, member=df_dist['member'].values)
 #print("Initial Bounds(after prediction):", clf.get_error_bounds())
-#clf.save_tree(f'{PATH}/ex10_after_prediction')
+clf.save_tree(f'{PATH}/ex9_after_prediction')
 Init_tree_DNF = clf.tree_to_dnf()
 #print("Initial phase DNF:", Init_tree_DNF)
 Init_tree_CNF = DNF_to_CNF(Init_tree_DNF)
+print("Initial phase DNF:", Init_tree_DNF)
 print("Initial phase CNF:", Init_tree_CNF)
 
 print("Initial phase TreeLearner time: ", time.time() - initial_phase_start)
@@ -465,8 +525,8 @@ while (distestimate_value != 0 or validifier_value != 0):
     next_valid_list = validifier_data["output_dict"]["counterexamples"]
     next_phase_dist_data = [(int(element),1,1) for element in next_dist_list.keys()]
     next_phase_valid_data = [(int(element),1,0) for element in next_valid_list.keys()]
-    #print("next_phase_valid_data",next_phase_valid_data)
-    #print("next_phase_dist_data",next_phase_dist_data)
+    print("next_phase_valid_data",next_phase_valid_data)
+    print("next_phase_dist_data",next_phase_dist_data)
     df_dist_next = prepare_data(next_phase_dist_data, number_of_vars, DistEstimate = True)
     df_valid_next = prepare_data(next_phase_valid_data, number_of_vars, DistEstimate = False)
     df_next = pd.concat([df_dist_next, df_valid_next], ignore_index=True)
@@ -483,7 +543,7 @@ while (distestimate_value != 0 or validifier_value != 0):
         random.seed(iteration + 10)
         print("------NEXT PHASE------")
         final_tree, tree_sequence = MuteTree(intermediate_tree_copy, df_next, 0, 0)
-        #final_tree.save_tree(output_file=f'{PATH}/final_trees/ex10_second_{iteration}')
+        final_tree.save_tree(output_file=f'{PATH}/final_trees/ex9_second_{iteration}')
         Next_phase_DNF = final_tree.tree_to_dnf()
         print("Next_phase_DNF:", Next_phase_DNF)
         Next_phase_CNF = DNF_to_CNF(Next_phase_DNF)
@@ -575,6 +635,9 @@ while (distestimate_value != 0 or validifier_value != 0):
 
 
 
+print("Final DistEstimate value: ",distestimate_value)
+print("Final Validifier value: ",validifier_value)
+print("Final candidate learnt: ",Next_phase_CNF)
 print("Total time taken: ",time.time() - start)
 
 

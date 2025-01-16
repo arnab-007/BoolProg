@@ -579,6 +579,7 @@ for progname in prognames:
     cand = config["Candidate"]["Expression"]
     init_states = config["Initial states"]["Expression"]
     k = config["Program specification"]["iterations"]
+    print(k)
     num_ops = config["Program specification"]["operations per line"]
     lines = config["Program specification"]["number of lines"]
     k_step_varmap = list()

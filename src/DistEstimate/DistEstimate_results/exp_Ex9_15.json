@@ -1,0 +1,27 @@
+{
+    "input_dict": {
+        "progname": "Ex9",
+        "candidate": "(!x1) && (!x2)",
+        "init_states": "(!x1) && (!x2) && (!x5) && (x3 || !x4) && (!x3 || x4)",
+        "iterations": 1
+    },
+    "parameters_dict": {
+        "epsilon": 0.05,
+        "delta": 0.1,
+        "m1": 600,
+        "m2": 10
+    },
+    "output_dict": {
+        "Reachability_dict": {
+            "26": 2038,
+            "12": 1212,
+            "24": 2750
+        },
+        "DistEstimate_value": 1.0,
+        "counterexamples": {
+            "26": 0.3396666666666667,
+            "12": 0.202,
+            "24": 0.4583333333333333
+        }
+    }
+}
