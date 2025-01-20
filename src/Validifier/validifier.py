@@ -33,7 +33,7 @@ import re
 def convert_to_decimal(variable_order,expression):
     # Mapping of variables to their positions in the binary representation
     #variable_order = ['x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15', 'x16', 'x17']
-    
+    expression = expression.replace(" ", "").split("&&")
     # Initialize a binary string
     binary_str = ""
     
@@ -816,6 +816,7 @@ for progname in prognames:
     estimated_dist = sum(individual_dist)/sum(sampled_output_states_dict.values())
     print("Validifier outputs: ",estimated_dist)
     #print("Counterexamples generated :",counter_examples)
+    
     state_counter_examples = [convert_to_decimal(prog_variables,state) for state in counter_examples]
     sampled_output_states_decimal = list(set([convert_to_decimal(prog_variables,state) for state in sampled_output_states]))
     # Get unique decimal values

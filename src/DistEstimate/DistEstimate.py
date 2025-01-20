@@ -280,6 +280,7 @@ for p in range(len(L)):
             
             L1 = [int(bit) for bit in bin(int(output))[2:].zfill(num_variables)]
 
+        
             
             
         

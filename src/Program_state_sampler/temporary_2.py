@@ -108,8 +108,11 @@ decimals_S = sorted(list(set(decimals_S)))
 decimals_not_S = sorted(list(set(decimals_not_S)))
 #print(len(decimals_S))
 #print(len(decimals_not_S))
-print("Initial states in S",decimals_S)
-print("Initial states not in S",decimals_not_S)
+
+decimals_1_print = [(element,1,1) for element in decimals_S]
+decimals_2_print = [(element,1,0) for element in decimals_not_S]
+print("Initial states in S",decimals_1_print)
+print("Initial states not in S",decimals_2_print)
 
 
 
