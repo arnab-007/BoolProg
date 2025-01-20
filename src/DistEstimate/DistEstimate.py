@@ -26,7 +26,7 @@ def convert_decimal_state_to_binary(n,num_states):
 
     return assignment
 
-def parse_dimacs(filename):
+def parse_cnf_dimacs(filename):
     """
     Parses a CNF DIMACS file and converts it into a list of clauses.
     
@@ -51,6 +51,33 @@ def parse_dimacs(filename):
                 if literals:
                     clauses.append(literals)
     return clauses
+
+def parse_dnf_dimacs(filename):
+    """
+    Parses a DNF DIMACS file and converts it into a list of terms.
+    
+    Parameters:
+    filename (str): Path to the DNF DIMACS file.
+    
+    Returns:
+    list of list of int: List of terms where each term is a list of literals.
+    """
+    terms = []
+    with open(filename, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if line.startswith('p dnf'):
+                continue  # Skip the problem line
+            if line.startswith('c'):
+                continue  # Skip comment lines
+            if line:
+                literals = list(map(int, line.split()))
+                if literals[-1] == 0:
+                    literals.pop()  # Remove trailing 0
+                if literals:
+                    terms.append(literals)
+    return terms
+
 
 def evaluate_cnf(clauses, assignment):
     """
@@ -91,6 +118,46 @@ def evaluate_cnf(clauses, assignment):
             return False
     return True
 
+
+
+def evaluate_dnf(terms, assignment):
+    """
+    Evaluate the DNF formula against the given assignment.
+    
+    Parameters:
+    clauses (list of list of int): List of DNF terms.
+    assignment (list of bool): Boolean assignment to variables.
+    
+    Returns:
+    bool: True if the assignment satisfies the DNF formula, False otherwise.
+    """
+
+    #print(assignment)
+    #print(clauses)
+    def literal_to_value(literal, assignment):
+        if literal > 0:
+            #print(f"Evaluating literal: {literal}, assignment: {assignment}")
+            return assignment[literal - 1]
+        else:
+            return not assignment[-literal - 1]
+    
+    '''
+    def literal_to_value(literal, assignment):
+        index = abs(literal) - 1  # Convert literal to zero-based index
+        if index >= len(assignment) or index < 0:
+            raise IndexError(f"Literal {literal} is out of bounds for assignment.")
+        return assignment[index] if literal > 0 else not assignment[index]
+
+    '''
+    for term in terms:
+        term_satisfied = True
+        for literal in term:
+            if not literal_to_value(literal, assignment):
+                term_satisfied = False
+                break
+        if term_satisfied:
+            return True
+    return False
 
 
 
@@ -212,6 +279,8 @@ for p in range(len(L)):
 
             
             L1 = [int(bit) for bit in bin(int(output))[2:].zfill(num_variables)]
+
+            
             
         
             results.append(output)  #Keeping track of all possible states reachable in at most k iterations 
@@ -235,15 +304,20 @@ num_states = len(prog_variables)
 print("Results from 600 runs:")
 print(element_counts)
 rev_distance = 0
-candidate_file = '../../candidate-cnf'
+
+
+candidate_file = '../../candidate-dnf'
 counterexamples = list()
-clauses = parse_dimacs(candidate_file) #parsing candidate CNF file
-#print("Clauses:",clauses)
+terms = parse_dnf_dimacs(candidate_file) #parsing candidate CNF file
+#print("Terms:",terms)
 for element in element_counts:
     #print(element)
     assignment =  convert_decimal_state_to_binary(int(element),num_states)
     #print("Assignment:", assignment)
-    ind_distance = evaluate_cnf(clauses,assignment)*element_counts[element]
+
+    ind_distance = evaluate_dnf(terms,assignment)*element_counts[element]
+
+    
     rev_distance += ind_distance
     #print(rev_distance)
     if (ind_distance == 0):

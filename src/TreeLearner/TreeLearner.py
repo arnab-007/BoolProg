@@ -212,7 +212,11 @@ class CustomDecisionTree:
         
         find_paths(self.root, [])
         dnf_formula = " || ".join([" && ".join(conditions) for conditions in paths])
-        return dnf_formula
+        terms = dnf_formula.split('||')
+        formatted_terms = [f"({term.strip()})" for term in terms]
+    
+        return ' || '.join(formatted_terms)
+        
     
     def drop_leaf_datapoints(self, member = None):
         '''Drop the data points with member 0 from the leaf nodes.'''

@@ -1,0 +1,35 @@
+{
+    "input_dict": {
+        "progname": "Ex7",
+        "candidate": "(!x6) && (!x5 || !x7 || x6 || !x1 || !x9 || !x8 || !x4) && (!x5 || x6 || x1 || !x9 || !x8 || !x4 || x7) && (x5 || x6 || !x9 || !x8 || !x4) && (x6 || x9 || !x8 || !x4) && (x6 || x4 || !x8) && (!x1 || x6 || !x5 || x8 || !x9) && (x5 || x6 || !x1 || x8 || !x9) && (x6 || x1 || x8 || !x9) && (!x7 || x6 || !x1 || x8 || x9) && (!x7 || x6 || x1 || x8 || x9) && (x6 || !x1 || x8 || x7 || x9) && (x6 || x1 || x8 || x7 || x9)",
+        "init_states": "(x1 || !x7) && (!x1 || x7) && (x6 || !x10) && (!x6 || x10)",
+        "iterations": 2
+    },
+    "parameters_dict": {
+        "epsilon": 0.05,
+        "delta": 0.1,
+        "t": 500
+    },
+    "output_dict": {
+        "Sampled output states": [
+            358,
+            615,
+            871,
+            999,
+            102,
+            743,
+            230,
+            486,
+            494,
+            239,
+            495,
+            367,
+            111,
+            238,
+            110,
+            366
+        ],
+        "Validifier_value": 0.0,
+        "counterexamples": {}
+    }
+}

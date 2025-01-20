@@ -90,7 +90,7 @@ with open('samples_plus.out', 'r') as f:
         # Convert the line into a list of integers
         sample = list((map(int, line.split())))
         decimal_value = sample_to_decimal(sample)
-        decimals_1.append((decimal_value,1,1))
+        decimals_1.append((decimal_value))
 
 decimals_2 = []
 with open('samples_minus.out', 'r') as f:
@@ -98,7 +98,7 @@ with open('samples_minus.out', 'r') as f:
         # Convert the line into a list of integers
         sample = list((map(int, line.split())))
         decimal_value = sample_to_decimal(sample)
-        decimals_2.append((decimal_value,1,0))
+        decimals_2.append((decimal_value))
 
 
 decimals_1 = sorted(list(set(decimals_1)))

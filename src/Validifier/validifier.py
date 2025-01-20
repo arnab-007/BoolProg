@@ -6,7 +6,7 @@ import sys
 import json
 import argparse
 import copy
-from sampler_for_cmsgen import convert_sample,cnf_to_dimacs
+#from sampler_for_cmsgen import convert_sample,cnf_to_dimacs
 # Get the parent directory path
 parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 # Add the parent directory to sys.path
@@ -48,6 +48,41 @@ def convert_to_decimal(variable_order,expression):
     
     # Convert the binary string to a decimal number
     return int(binary_str, 2)
+
+
+def convert_sample(sample_line):
+    # Split the line into tokens
+    tokens = sample_line.split()
+    # Initialize an empty list to hold the formatted variables
+    formatted_vars = []
+    
+    for token in tokens:
+        num = int(token)
+        if num != 0:
+            if num > 0:
+                var_name = variable_mapping.get(num)
+                if var_name:
+                    formatted_vars.append(f"{var_name}")
+            else:
+                var_name = variable_mapping.get(-num)
+                if var_name:
+                    formatted_vars.append(f"!{var_name}")
+    
+    return " && ".join(formatted_vars)
+
+
+def cnf_to_dimacs(cnf_formula, variable_mapping):
+    dimacs = []
+    for clause in cnf_formula:
+        dimacs_clause = []
+        for literal in clause:
+            if literal.startswith('!'):
+                dimacs_clause.append(-variable_mapping[literal[1:]])
+            else:
+                dimacs_clause.append(variable_mapping[literal])
+        dimacs.append(dimacs_clause)
+    return dimacs
+
 
 
 def extract_actual_vars(cnf_file_path):
@@ -560,8 +595,8 @@ for key in variable_mapping.keys():
     if prefix not in min_indices or index < min_indices[prefix]:
         min_indices[prefix] = index
 
-print(min_indices)
-print(max_indices)
+#print(min_indices)
+#print(max_indices)
 '''
 for key, value in max_indices.items():
     print(f"{key}: {value}")
@@ -579,7 +614,7 @@ for progname in prognames:
     cand = config["Candidate"]["Expression"]
     init_states = config["Initial states"]["Expression"]
     k = config["Program specification"]["iterations"]
-    print(k)
+    #print(k)
     num_ops = config["Program specification"]["operations per line"]
     lines = config["Program specification"]["number of lines"]
     k_step_varmap = list()
@@ -631,6 +666,7 @@ for progname in prognames:
     
     output_variables_dict = {key: value for key, value in output_variables_dict.items() if key.startswith('x')}
     #print("Output variables:",output_variables_dict)
+    #print("Next variables :", next_variables)
     equivalence_clauses = list()
     for i in range (k-1):
         #print(k_step_varmap[i])
@@ -648,10 +684,15 @@ for progname in prognames:
     cnf_list_init, cnf_str_init = generate_init_DIMACS_formula(init_states,init_varmap,min_indices)
     #print("cnf_list_init:",cnf_list_init)
 
+    #print(cnf_prog_formula)
+
     k_step_cnf_prog_formula = [cnf_prog_formula]
 
     for i in range(k-1):
         #k_step_cnf_prog_formula.append(translate_formula(k_step_cnf_prog_formula[-1], num_ops*lines))
+
+        #print("Building k step reachability formula :")
+        #print(translate_formula(k_step_cnf_prog_formula[-1], num_variables))
         k_step_cnf_prog_formula.append(translate_formula(k_step_cnf_prog_formula[-1], num_variables))
 
 
@@ -699,7 +740,6 @@ for progname in prognames:
 
 
 
-    
 
     # Read the input file and convert the content
     with open('samples_converted.txt', 'r') as file:
@@ -741,11 +781,13 @@ for progname in prognames:
         for i in range(k):
             new_clause = []
             for term in formula:
-                new_term = [term[0] + num_ops * lines * i] if term[0] > 0 else [term[0] - num_ops * lines * i]
+                new_term = [term[0] + num_variables * i] if term[0] > 0 else [term[0] - num_variables * i]
                 new_clause.append(new_term)
             #print(new_clause)
             test_formula = k_step_reachability_formula + new_clause
             formula_content = convert_list_to_dimacs(num_variables,test_formula)
+
+            #print(formula_content)
             
 
             # Save to a .cnf file (optional)
@@ -754,6 +796,7 @@ for progname in prognames:
             test_reachability_cnf_file = "test-reachability.cnf"  # The path to your CNF file in DIMACS format
             valid_reachability_cnf_file = "valid-reachability.cnf"
             processed_formula_content, processed_variable_map = renumber_dimacs(formula_content)
+            #print("processed variable map: ", processed_variable_map)
             with open("valid-reachability.cnf", "w") as file:
                 file.write(processed_formula_content + "\n")
             #print(processed_variable_map)
@@ -798,6 +841,8 @@ for progname in prognames:
 
     for element in unique_state_counter_examples:
         counterexamples_dict[element] = 1/(len(sampled_output_states_decimal))
+
+    print("Validifier counterexamples :", sorted(counterexamples_dict.keys()))
 
     input_dict = {"progname":progname,"candidate":cand,"init_states":init_states,"iterations":k}
     output_dict = {"Sampled output states":sampled_output_states_decimal,"Validifier_value":estimated_dist,"counterexamples":counterexamples_dict}

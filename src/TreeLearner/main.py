@@ -231,61 +231,8 @@ def prepare_data(data, number_of_vars, DistEstimate = True):
     return df
 
 
-from sympy.logic.boolalg import Or, And, Not
-from sympy import symbols, simplify_logic
-import re
 
-def parse_dnf(dnf_formula):
-    """
-    Parse a DNF formula string into a sympy Boolean expression.
-    Args:
-        dnf_formula (str): DNF formula as a string, e.g., "(x1 && x2 && x3) || (x3 && !x4) || (!x1 && x2)"
-    Returns:
-        sympy Boolean expression representing the DNF formula.
-    """
-    # Replace '&&' with '&' and '||' with '|' for Python's logical operators
-    dnf_formula = dnf_formula.replace('&&', '&').replace('||', '|').replace('!', '~').replace('(','').replace(')','')
-
-    # Extract all unique variables using regex (handles negated variables too)
-    variables = set(re.findall(r'\b\w+\b', dnf_formula))
-    sympy_vars = {var: symbols(var) for var in variables}
-
-    # Prepare evaluation dictionary
-    eval_globals = {"__builtins__": None}
-    eval_globals.update(sympy_vars)
-    eval_globals.update({"&": And, "|": Or, "~": Not})
-
-    # Evaluate the formula with `eval`
-    expr = eval(dnf_formula, eval_globals)
-    return expr
-
-def DNF_to_CNF_old(dnf_formula):
-    """
-    Convert a DNF formula string to a minimized CNF formula string.
-    Args:
-        dnf_formula (str): DNF formula as a string, e.g., "(x1 && x2 && x3) || (x3 && !x4) || (!x1 && x2)"
-    Returns:
-        cnf_formula (str): Minimized CNF formula as a string, e.g., "(!x1 || x3) && (!x1 || !x4) && x2"
-    """
-    # Step 1: Parse the DNF formula into a sympy expression
-    dnf_expr = parse_dnf(dnf_formula)
-    print(dnf_expr)
-    # Step 2: Convert to CNF and simplify
-    cnf_expr = simplify_logic(dnf_expr, form='cnf')
-    print(cnf_expr)
-    # Step 3: Convert sympy expression back to the desired string format
-    cnf_str = str(cnf_expr)
-
-    # Replace sympy's logical operators with the string format
-    cnf_str = cnf_str.replace('Or', '||').replace('And', '&&').replace('~', '!')
-
-    # Ensure that '&&' and '||' are properly spaced for clarity
-    cnf_str = cnf_str.replace('&&', ') && (').replace('||', ' || ').strip()
-    cnf_str = cnf_str.replace('&','&&').replace('|','||')
-    return cnf_str
-
-
-def DNF_to_CNF(dnf_string):
+def DNF_to_CNF_old(dnf_string):
     def parse_clause(clause):
         """Convert a conjunction clause into a set of literals."""
         return set(literal.strip() for literal in clause.split("&&"))
@@ -335,6 +282,49 @@ def DNF_to_CNF(dnf_string):
 
     # Convert to CNF string format
     return cnf_to_string(cnf_clauses)
+
+
+from z3 import *
+
+def DNF_to_CNF(dnf_str):
+    """
+    Converts a DNF formula string to an equivalent CNF formula string using the Z3 solver.
+
+    Args:
+        dnf_str (str): A string representing the DNF formula, e.g., "!x1 && x2 || x3 && !x4".
+
+    Returns:
+        str: A string representing the equivalent CNF formula.
+    """
+    # Parse the DNF string into a Z3 expression
+    def parse_literal(literal):
+        literal = literal.strip()
+        if literal.startswith("!"):
+            return Not(Bool(literal[1:]))
+        return Bool(literal)
+
+    def parse_clause(clause):
+        return And([parse_literal(lit) for lit in clause.split("&&")])
+
+    dnf_clauses = dnf_str.split("||")
+    dnf_expr = Or([parse_clause(clause.strip()) for clause in dnf_clauses])
+
+    # Simplify and extract the CNF expression
+    cnf_expr = Tactic('tseitin-cnf')(dnf_expr).as_expr()
+
+    # Convert CNF Z3 expression back to a string
+    def format_z3_expr(expr):
+        if is_not(expr):
+            return f"!{format_z3_expr(expr.arg(0))}"
+        elif is_or(expr):
+            return " || ".join(format_z3_expr(arg) for arg in expr.children())
+        elif is_and(expr):
+            return " && ".join(f"({format_z3_expr(arg)})" for arg in expr.children())
+        else:
+            return str(expr)
+
+    return format_z3_expr(cnf_expr)
+
 
 
 
@@ -389,8 +379,12 @@ for progname in prognames:
 
 
 initial_phase_start = time.time()
-initial_dist_data = initial_states["output_dict"]["Sampled positive initial states"]
-initial_valid_data = initial_states["output_dict"]["Sampled negative initial states"]
+initial_dist_list = initial_states["output_dict"]["Sampled positive initial states"]
+initial_valid_list = initial_states["output_dict"]["Sampled negative initial states"]
+initial_phase_dist_list = [int(element) for element in initial_dist_list]
+initial_phase_valid_list = [int(element) for element in initial_valid_list]
+initial_dist_data = [(state, 1, 1) for state in initial_phase_dist_list]
+initial_valid_data = [(state, 1, 0) for state in initial_phase_valid_list]
 print("Initial dist data:",initial_dist_data)
 print("Initial valid data:",initial_valid_data)
 #print(length := len(initial_dist_data), len(initial_valid_data), len(second_phase_dist_data), len(second_phase_valid_data))
@@ -412,15 +406,14 @@ predictions = clf.predict(df_dist[list(df.columns[:-3])].values, expected_labels
 clf.save_tree(f'{PATH}/ex9_after_prediction')
 Init_tree_DNF = clf.tree_to_dnf()
 #print("Initial phase DNF:", Init_tree_DNF)
-Init_tree_CNF = DNF_to_CNF(Init_tree_DNF)
-print("Initial phase DNF:", Init_tree_DNF)
-print("Initial phase CNF:", Init_tree_CNF)
+print("Initial phase candidate DNF:", Init_tree_DNF)
+
 
 print("Initial phase TreeLearner time: ", time.time() - initial_phase_start)
 #print(cand_info)
 with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "r") as file:
     data = json.load(file)
-    data["Candidate"]["Expression"] = Init_tree_CNF
+    data["Candidate"]["Expression"] = Init_tree_DNF
 with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "w") as file:
     json.dump(data, file, indent=4)
 
@@ -521,10 +514,12 @@ while (distestimate_value != 0 or validifier_value != 0):
 
 
     next_phase_start = time.time()
-    next_dist_list = distestimate_data["output_dict"]["counterexamples"]
-    next_valid_list = validifier_data["output_dict"]["counterexamples"]
-    next_phase_dist_data = [(int(element),1,1) for element in next_dist_list.keys()]
-    next_phase_valid_data = [(int(element),1,0) for element in next_valid_list.keys()]
+    next_dist_dict = distestimate_data["output_dict"]["counterexamples"]
+    next_valid_dict = validifier_data["output_dict"]["counterexamples"]
+    next_phase_dist_list = [int(element) for element in next_dist_dict.keys()]
+    next_phase_valid_list = list(set(int(element) for element in next_valid_dict.keys()) - set(initial_phase_dist_list))
+    next_phase_dist_data = [(int(element),1,1) for element in next_phase_dist_list]
+    next_phase_valid_data = [(int(element),1,0) for element in next_phase_valid_list]
     print("next_phase_valid_data",next_phase_valid_data)
     print("next_phase_dist_data",next_phase_dist_data)
     df_dist_next = prepare_data(next_phase_dist_data, number_of_vars, DistEstimate = True)
@@ -546,13 +541,12 @@ while (distestimate_value != 0 or validifier_value != 0):
         final_tree.save_tree(output_file=f'{PATH}/final_trees/ex9_second_{iteration}')
         Next_phase_DNF = final_tree.tree_to_dnf()
         print("Next_phase_DNF:", Next_phase_DNF)
-        Next_phase_CNF = DNF_to_CNF(Next_phase_DNF)
-        print("Next phase CNF:", Next_phase_CNF)
+        
 
     print("Next phase TreeLearner time :", time.time() - next_phase_start)
     with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "r") as file:
         data = json.load(file)
-        data["Candidate"]["Expression"] = Next_phase_CNF
+        data["Candidate"]["Expression"] = Next_phase_DNF
     with open(os.path.join(PARENT_PATH, "candidate_files", progname + ".json"), "w") as file:
         json.dump(data, file, indent=4)
 
@@ -637,7 +631,7 @@ while (distestimate_value != 0 or validifier_value != 0):
 
 print("Final DistEstimate value: ",distestimate_value)
 print("Final Validifier value: ",validifier_value)
-print("Final candidate learnt: ",Next_phase_CNF)
+print("Final candidate learnt: ",Next_phase_DNF)
 print("Total time taken: ",time.time() - start)
 
 
