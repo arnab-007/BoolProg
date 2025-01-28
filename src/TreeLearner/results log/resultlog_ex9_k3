@@ -1,0 +1,37 @@
+Initial dist data: [(0, 1, 1), (1, 1, 1), (6, 1, 1), (7, 1, 1), (24, 1, 1), (25, 1, 1), (30, 1, 1), (31, 1, 1)]
+Initial valid data: [(2, 1, 0), (4, 1, 0), (11, 1, 0), (13, 1, 0), (19, 1, 0), (26, 1, 0), (27, 1, 0), (28, 1, 0)]
+Initial phase candidate DNF: (!x3 && !x4) || (x3 && x4)
+Initial phase TreeLearner time:  0.24743986129760742
+Initial Verifier time : 39.64992308616638
+Initial phase time : 39.90031099319458
+DistEstimate value: 0.3757222222222222
+Validifier value: 0.0
+next_phase_valid_data []
+next_phase_dist_data [(28, 1, 1), (12, 1, 1), (18, 1, 1), (26, 1, 1)]
+iteration=0
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3 && !x4) || (!x3 && x4) || (x3)
+iteration=1
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3) || (x3 && !x4) || (x3 && x4)
+iteration=2
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3) || (x3 && !x4) || (x3 && x4)
+iteration=3
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3) || (x3 && !x4) || (x3 && x4)
+iteration=4
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3) || (x3 && !x4) || (x3 && x4)
+Next phase TreeLearner time : 0.6407980918884277
+Next phase Verifier time:  40.549113750457764
+Next phase total time:  41.19317007064819
+Final DistEstimate value:  0.0
+Final Validifier value:  0.0
+Final candidate learnt:  (!x3) || (x3 && !x4) || (x3 && x4)
+Total time taken:  81.09364581108093
