@@ -1,0 +1,37 @@
+Initial dist data: [(0, 1, 1), (1, 1, 1), (6, 1, 1), (7, 1, 1), (24, 1, 1), (25, 1, 1), (30, 1, 1), (31, 1, 1)]
+Initial valid data: [(4, 1, 0), (5, 1, 0), (12, 1, 0), (15, 1, 0), (17, 1, 0), (22, 1, 0), (26, 1, 0), (27, 1, 0)]
+Initial phase candidate DNF: (!x3 && !x4 && !x1) || (!x3 && !x4 && x1 && x2) || (x3 && x4 && !x1 && !x2) || (x3 && x4 && x1 && x2)
+Initial phase TreeLearner time:  0.4744570255279541
+Initial Verifier time : 78.1287591457367
+Initial phase time : 78.60795211791992
+DistEstimate value: 0.24663888888888885
+Validifier value: 0.0
+next_phase_valid_data []
+next_phase_dist_data [(18, 1, 1), (26, 1, 1), (12, 1, 1), (28, 1, 1), (16, 1, 1)]
+iteration=0
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3 && !x4 && !x1) || (!x3 && !x4 && x1 && !x2) || (!x3 && !x4 && x1 && x2) || (!x3 && x4) || (x3 && !x4) || (x3 && x4 && !x1) || (x3 && x4 && x1 && x2)
+iteration=1
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3 && !x4 && !x1) || (!x3 && !x4 && x1 && !x2) || (!x3 && !x4 && x1 && x2) || (!x3 && x4) || (x3 && !x1 && !x2) || (x3 && !x1 && x2) || (x3 && x1 && x2)
+iteration=2
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3 && !x4 && !x1) || (!x3 && !x4 && x1 && !x2) || (!x3 && !x4 && x1 && x2) || (!x3 && x4) || (x3 && !x1 && !x2) || (x3 && !x1 && x2) || (x3 && x1 && x2)
+iteration=3
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3 && !x4 && !x1) || (!x3 && !x4 && x1) || (!x3 && x4) || (x3 && !x4) || (x3 && x4 && !x1 && !x2) || (x3 && x4 && x1 && x2)
+iteration=4
+------NEXT PHASE------
+Successfully reached the desired user error bounds.
+Next_phase_DNF: (!x3 && !x4 && !x2) || (!x3 && !x4 && x2) || (!x3 && x4) || (x3 && !x4) || (x3 && x4 && !x1 && !x2) || (x3 && x4 && x1 && x2)
+Next phase TreeLearner time : 0.24562668800354004
+Next phase Verifier time:  78.53852415084839
+Next phase total time:  78.78867387771606
+Final DistEstimate value:  0.0
+Final Validifier value:  0.0
+Final candidate learnt:  (!x3 && !x4 && !x2) || (!x3 && !x4 && x2) || (!x3 && x4) || (x3 && !x4) || (x3 && x4 && !x1 && !x2) || (x3 && x4 && x1 && x2)
+Total time taken:  157.39683413505554
