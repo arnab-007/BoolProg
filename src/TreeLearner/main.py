@@ -201,18 +201,18 @@ def MuteTree(tree, df, distUser, validUser):
         distCurr, validCurr = error_bounds['dist_error'], error_bounds['valid_error']
         if distCurr <= distUser  and validCurr <= validUser:
             print("Successfully reached the desired user error bounds.")
-            return tree, tree_sequence
+            return tree, tree_sequence, distCurr, validCurr
     '''If timeout occurs, we return the tree with the best error bounds so far by sorting the dictionary tree_sequence and extracting the first element.'''
     print("Timeout occurred. Returning the best tree so far.")
     #print(tree.print_leaf_datapoints())
     if not tree_sequence:
         print("No valid tree sequence. Returning original tree.")
         #print(tree.print_leaf_datapoints())
-        return tree, {}
+        return tree, {}, distCurr, validCurr
     # best_tree = sorted(tree_sequence.items(), key=lambda x: round(np.sqrt(x[1]['dist_error'] + x[1]['valid_error'])))[0][0]
     best_tree = sorted(tree_sequence.items(), key=lambda x: round(np.sqrt(x[1]['dist_error'] + x[1]['valid_error']), 2))[0][0]
     #print("Best Tree Error Bounds:", best_tree.get_error_bounds())
-    return best_tree, tree_sequence
+    return best_tree, tree_sequence, distCurr, validCurr
 
 
 def decimal_to_n_bit_binary(decimal, n):
@@ -388,8 +388,8 @@ initial_valid_data = [(state, 1, 0) for state in initial_phase_valid_list]
 print("Initial dist data:",initial_dist_data)
 print("Initial valid data:",initial_valid_data)
 #print(length := len(initial_dist_data), len(initial_valid_data), len(second_phase_dist_data), len(second_phase_valid_data))
-#number_of_vars = 8
-number_of_vars = 10
+number_of_vars = 8
+#number_of_vars = 10
 #number_of_vars = 5
 #number_of_vars = 17
 #number_of_vars = 12
@@ -516,15 +516,19 @@ while (distestimate_value != 0 or validifier_value != 0):
     next_phase_start = time.time()
     next_dist_dict = distestimate_data["output_dict"]["counterexamples"]
     next_valid_dict = validifier_data["output_dict"]["counterexamples"]
-    next_phase_dist_list = [int(element) for element in next_dist_dict.keys()]
-    next_phase_valid_list = list(set(int(element) for element in next_valid_dict.keys()) - set(initial_phase_dist_list))
-    next_phase_dist_data = [(int(element),1,1) for element in next_phase_dist_list]
-    next_phase_valid_data = [(int(element),1,0) for element in next_phase_valid_list]
+    next_phase_dist_list = [element for element in next_dist_dict.keys()]
+    next_phase_valid_list = list(set(element for element in next_valid_dict.keys()) - set(initial_phase_dist_list))
+    next_phase_dist_data = [(int(key), value, 1) for key, value in next_dist_dict.items() if key in next_phase_dist_list]
+    next_phase_valid_data = [(int(key), value, 0) for key, value in next_valid_dict.items() if key in next_phase_valid_list]
     print("next_phase_valid_data",next_phase_valid_data)
     print("next_phase_dist_data",next_phase_dist_data)
     df_dist_next = prepare_data(next_phase_dist_data, number_of_vars, DistEstimate = True)
     df_valid_next = prepare_data(next_phase_valid_data, number_of_vars, DistEstimate = False)
-    df_next = pd.concat([df_dist_next, df_valid_next], ignore_index=True)
+
+    dfs_to_concat = [df for df in [df_dist_next, df_valid_next] if not df.empty]
+    df_next = pd.concat(dfs_to_concat, ignore_index=True) if dfs_to_concat else pd.DataFrame()
+
+    #df_next = pd.concat([df_dist_next, df_valid_next], ignore_index=True)
     intermediate_tree.predict(df_next[list(df.columns[:-3])].values, expected_labels=df_next['label'].values, weights=df_next['weight'].values, member=df_next['member'].values)
     #clf.print_leaf_datapoints()
     #print("Next Phase Bounds:", intermediate_tree.get_error_bounds())
@@ -537,9 +541,12 @@ while (distestimate_value != 0 or validifier_value != 0):
         print(f'{iteration=}')
         random.seed(iteration + 10)
         print("------NEXT PHASE------")
-        final_tree, tree_sequence = MuteTree(intermediate_tree_copy, df_next, 0, 0)
-        final_tree.save_tree(output_file=f'{PATH}/final_trees/ex9_second_{iteration}')
+        final_tree, tree_sequence, Dist_value, Valid_value = MuteTree(intermediate_tree_copy, df_next, 0, 0)
+        #final_tree.save_tree(output_file=f'{PATH}/final_trees/ex9_second_{iteration}')
         Next_phase_DNF = final_tree.tree_to_dnf()
+        if (Dist_value == 0 and Valid_value == 0):
+            Next_phase_best_DNF = Next_phase_DNF
+            Next_phase_DNF = Next_phase_best_DNF
         print("Next_phase_DNF:", Next_phase_DNF)
         
 

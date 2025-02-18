@@ -465,6 +465,8 @@ def information_gain(X, y, feature_idx, threshold):
     return ig
 
 def entropy(y):
+    y = y.astype(int)
     hist = np.bincount(y)
+    #print("Histogram :", hist)
     ps = hist / len(y)
     return -np.sum([p * np.log2(p) for p in ps if p > 0])
